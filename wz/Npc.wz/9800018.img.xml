@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9800018.img">
+    <imgdir name="info">
+        <int name="hideName" value="1" />
+    </imgdir>
+    <imgdir name="stand">
+        <canvas name="1" width="192" height="165">
+            <vector name="origin" x="93" y="165" />
+            <int name="delay" value="90" />
+        </canvas>
+        <canvas name="2" width="192" height="169">
+            <vector name="origin" x="93" y="169" />
+            <int name="delay" value="90" />
+        </canvas>
+        <canvas name="3" width="187" height="153">
+            <vector name="origin" x="90" y="153" />
+            <int name="delay" value="90" />
+        </canvas>
+        <canvas name="4" width="177" height="145">
+            <vector name="origin" x="85" y="135" />
+            <int name="delay" value="90" />
+        </canvas>
+        <canvas name="5" width="115" height="128">
+            <vector name="origin" x="57" y="132" />
+            <int name="delay" value="90" />
+        </canvas>
+        <canvas name="6" width="31" height="130">
+            <vector name="origin" x="9" y="150" />
+            <int name="delay" value="90" />
+        </canvas>
+        <canvas name="7" width="115" height="128">
+            <vector name="origin" x="57" y="147" />
+            <int name="delay" value="180" />
+        </canvas>
+        <canvas name="8" width="115" height="128">
+            <int name="delay" value="180" />
+            <vector name="origin" x="57" y="147" />
+        </canvas>
+        <canvas name="9" width="115" height="128">
+            <int name="delay" value="180" />
+            <vector name="origin" x="57" y="147" />
+        </canvas>
+        <canvas name="10" width="115" height="128">
+            <int name="delay" value="180" />
+            <vector name="origin" x="57" y="147" />
+        </canvas>
+        <canvas name="11" width="115" height="128">
+            <int name="delay" value="180" />
+            <vector name="origin" x="57" y="147" />
+        </canvas>
+        <canvas name="12" width="115" height="128">
+            <int name="delay" value="180" />
+            <vector name="origin" x="57" y="147" />
+        </canvas>
+        <uol name="13" value="7" />
+        <uol name="14" value="8" />
+        <uol name="15" value="9" />
+        <uol name="16" value="10" />
+        <uol name="17" value="11" />
+        <uol name="18" value="12" />
+        <uol name="19" value="7" />
+        <uol name="20" value="8" />
+        <uol name="21" value="9" />
+        <uol name="22" value="10" />
+        <uol name="23" value="11" />
+        <uol name="24" value="12" />
+        <uol name="25" value="7" />
+        <uol name="26" value="8" />
+        <uol name="27" value="9" />
+        <uol name="28" value="10" />
+        <uol name="29" value="11" />
+        <uol name="30" value="12" />
+        <uol name="31" value="7" />
+        <uol name="32" value="8" />
+        <uol name="33" value="9" />
+        <uol name="34" value="10" />
+        <uol name="35" value="11" />
+        <uol name="36" value="12" />
+        <uol name="37" value="7" />
+        <uol name="38" value="8" />
+        <uol name="39" value="9" />
+        <uol name="40" value="10" />
+        <uol name="41" value="11" />
+        <uol name="42" value="12" />
+        <uol name="43" value="7" />
+        <uol name="44" value="8" />
+        <uol name="45" value="9" />
+        <uol name="46" value="10" />
+        <uol name="47" value="11" />
+        <uol name="48" value="12" />
+        <uol name="49" value="7" />
+        <uol name="50" value="8" />
+        <uol name="51" value="9" />
+        <uol name="52" value="10" />
+        <uol name="53" value="11" />
+        <uol name="54" value="12" />
+        <uol name="55" value="7" />
+        <uol name="56" value="8" />
+        <uol name="57" value="9" />
+        <uol name="58" value="10" />
+        <uol name="59" value="11" />
+        <uol name="60" value="12" />
+        <uol name="61" value="7" />
+        <uol name="62" value="8" />
+        <uol name="63" value="9" />
+        <uol name="64" value="10" />
+        <uol name="65" value="11" />
+        <uol name="66" value="12" />
+        <uol name="67" value="7" />
+        <uol name="68" value="8" />
+        <uol name="69" value="9" />
+        <uol name="70" value="10" />
+        <uol name="71" value="11" />
+        <uol name="72" value="12" />
+        <uol name="73" value="7" />
+        <uol name="74" value="8" />
+        <uol name="75" value="9" />
+        <uol name="76" value="10" />
+        <uol name="77" value="11" />
+        <uol name="78" value="12" />
+        <uol name="79" value="7" />
+        <uol name="80" value="8" />
+        <uol name="81" value="9" />
+        <uol name="82" value="10" />
+        <uol name="83" value="11" />
+        <uol name="84" value="12" />
+        <uol name="85" value="7" />
+        <uol name="86" value="8" />
+        <uol name="87" value="9" />
+        <uol name="88" value="10" />
+        <uol name="89" value="11" />
+        <uol name="90" value="12" />
+        <uol name="91" value="7" />
+        <uol name="92" value="8" />
+        <uol name="93" value="9" />
+        <uol name="94" value="10" />
+        <uol name="95" value="11" />
+        <uol name="96" value="12" />
+        <uol name="97" value="7" />
+        <uol name="98" value="8" />
+        <uol name="99" value="9" />
+        <uol name="100" value="10" />
+        <uol name="101" value="11" />
+        <uol name="102" value="12" />
+        <uol name="103" value="7" />
+        <uol name="104" value="8" />
+        <uol name="105" value="9" />
+        <uol name="106" value="10" />
+        <uol name="107" value="11" />
+        <uol name="108" value="12" />
+        <uol name="109" value="7" />
+        <uol name="110" value="8" />
+        <uol name="111" value="9" />
+        <uol name="112" value="10" />
+        <uol name="113" value="11" />
+        <uol name="114" value="12" />
+        <uol name="115" value="7" />
+        <uol name="116" value="8" />
+        <uol name="117" value="9" />
+        <uol name="118" value="10" />
+        <uol name="119" value="11" />
+        <uol name="120" value="12" />
+        <uol name="121" value="7" />
+        <uol name="122" value="8" />
+        <uol name="123" value="9" />
+        <uol name="124" value="10" />
+        <uol name="125" value="11" />
+        <uol name="126" value="12" />
+        <uol name="127" value="7" />
+        <uol name="128" value="8" />
+        <uol name="129" value="9" />
+        <uol name="130" value="10" />
+        <uol name="131" value="11" />
+        <uol name="132" value="12" />
+        <uol name="133" value="7" />
+        <uol name="134" value="8" />
+        <uol name="135" value="9" />
+        <uol name="136" value="10" />
+        <uol name="137" value="11" />
+        <uol name="138" value="12" />
+        <uol name="139" value="7" />
+        <uol name="140" value="8" />
+        <uol name="141" value="9" />
+        <uol name="142" value="10" />
+        <uol name="143" value="11" />
+        <uol name="144" value="12" />
+        <uol name="145" value="7" />
+        <uol name="146" value="8" />
+        <uol name="147" value="9" />
+        <uol name="148" value="10" />
+        <uol name="149" value="11" />
+        <uol name="150" value="12" />
+        <uol name="151" value="7" />
+        <uol name="152" value="8" />
+        <uol name="153" value="9" />
+        <uol name="154" value="10" />
+        <uol name="155" value="11" />
+        <uol name="156" value="12" />
+        <uol name="157" value="7" />
+        <uol name="158" value="8" />
+        <uol name="159" value="9" />
+        <uol name="160" value="10" />
+        <uol name="161" value="11" />
+        <uol name="162" value="12" />
+        <uol name="163" value="7" />
+        <uol name="164" value="8" />
+        <uol name="165" value="9" />
+        <uol name="166" value="10" />
+        <uol name="167" value="11" />
+        <uol name="168" value="12" />
+        <uol name="169" value="7" />
+        <uol name="170" value="8" />
+        <uol name="171" value="9" />
+        <uol name="172" value="10" />
+        <uol name="173" value="11" />
+        <uol name="174" value="12" />
+        <uol name="175" value="7" />
+        <uol name="176" value="8" />
+        <uol name="177" value="9" />
+        <uol name="178" value="10" />
+        <uol name="179" value="11" />
+        <uol name="180" value="12" />
+        <uol name="181" value="7" />
+        <uol name="182" value="8" />
+        <uol name="183" value="9" />
+        <uol name="184" value="10" />
+        <uol name="185" value="11" />
+        <uol name="186" value="12" />
+        <uol name="187" value="7" />
+        <uol name="188" value="8" />
+        <uol name="189" value="9" />
+        <uol name="190" value="10" />
+        <uol name="191" value="11" />
+        <uol name="192" value="12" />
+        <uol name="193" value="7" />
+        <uol name="194" value="8" />
+        <uol name="195" value="9" />
+        <uol name="196" value="10" />
+        <uol name="197" value="11" />
+        <uol name="198" value="12" />
+        <uol name="199" value="7" />
+        <uol name="200" value="8" />
+        <uol name="201" value="9" />
+        <uol name="202" value="10" />
+        <uol name="203" value="11" />
+        <uol name="204" value="12" />
+        <uol name="205" value="7" />
+        <uol name="206" value="8" />
+        <uol name="207" value="9" />
+        <uol name="208" value="10" />
+        <uol name="209" value="11" />
+        <uol name="210" value="12" />
+        <uol name="211" value="7" />
+        <uol name="212" value="8" />
+        <uol name="213" value="9" />
+        <uol name="214" value="10" />
+        <uol name="215" value="11" />
+        <uol name="216" value="12" />
+        <uol name="217" value="7" />
+        <uol name="218" value="8" />
+        <uol name="219" value="9" />
+        <uol name="220" value="10" />
+        <uol name="221" value="11" />
+        <uol name="222" value="12" />
+        <uol name="223" value="7" />
+        <uol name="224" value="8" />
+        <uol name="225" value="9" />
+        <uol name="226" value="10" />
+        <uol name="227" value="11" />
+        <uol name="228" value="12" />
+        <uol name="229" value="7" />
+        <uol name="230" value="8" />
+        <uol name="231" value="9" />
+        <uol name="232" value="10" />
+        <uol name="233" value="11" />
+        <uol name="234" value="12" />
+        <uol name="235" value="7" />
+        <uol name="236" value="8" />
+        <uol name="237" value="9" />
+        <uol name="238" value="10" />
+        <uol name="239" value="11" />
+        <uol name="240" value="12" />
+    </imgdir>
+</imgdir>

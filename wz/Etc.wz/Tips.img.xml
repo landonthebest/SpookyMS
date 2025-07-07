@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="Tips.img">
+    <imgdir name="all">
+        <string name="0" value="Please, no spoilers for other players unless they explicitly ask."/>
+        <string name="1" value="Verbal and other forms of abuse will NOT be tolerated. Abusers will be blocked from the game."/>
+        <string name="2" value="Using, selling, trading, or promoting hacking or hacking tools will result in being blocked from the game."/>
+        <string name="3" value="AdventureMS is FULL of secrets; maps, monsters, quests, items, etc... Take time to look around!"/>
+        <string name="4" value="Balloons can be found in the following areas: Overworld, Zone 2, Zone 3, Zone 4!"/>
+    </imgdir>
+    <imgdir name="info">
+        <imgdir name="0">
+            <int name="levelMin" value="1"/>
+            <int name="levelMax" value="10"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="20"/>
+            <string name="tip" value="novice"/>
+        </imgdir>
+        <imgdir name="1">
+            <int name="levelMin" value="11"/>
+            <int name="levelMax" value="23"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="40"/>
+            <string name="tip" value="novice2"/>
+        </imgdir>
+        <imgdir name="2">
+            <int name="levelMin" value="24"/>
+            <int name="levelMax" value="32"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="50"/>
+            <string name="tip" value="novice3"/>
+        </imgdir>
+        <imgdir name="3">
+            <int name="levelMin" value="33"/>
+            <int name="levelMax" value="45"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="60"/>
+            <string name="tip" value="novice4"/>
+        </imgdir>
+        <imgdir name="4">
+            <int name="levelMin" value="31"/>
+            <int name="levelMax" value="70"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="70"/>
+            <string name="tip" value="novice4"/>
+            <int name="job" value="15"/>
+        </imgdir>
+        <imgdir name="5">
+            <int name="levelMin" value="71"/>
+            <int name="levelMax" value="120"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="80"/>
+            <string name="tip" value="novice5"/>
+            <int name="job" value="15"/>
+        </imgdir>
+        <imgdir name="6">
+            <int name="levelMin" value="121"/>
+            <int name="levelMax" value="200"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="90"/>
+            <string name="tip" value="novice6"/>
+        </imgdir>
+        <imgdir name="7">
+            <int name="levelMin" value="11"/>
+            <int name="levelMax" value="30"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="20"/>
+            <string name="tip" value="novice7"/>
+            <int name="job" value="16"/>
+        </imgdir>
+        <imgdir name="8">
+            <int name="levelMin" value="31"/>
+            <int name="levelMax" value="70"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="70"/>
+            <string name="tip" value="novice8"/>
+            <int name="job" value="16"/>
+        </imgdir>
+        <imgdir name="9">
+            <int name="levelMin" value="71"/>
+            <int name="levelMax" value="120"/>
+            <int name="interval" value="600000"/>
+            <int name="all" value="80"/>
+            <string name="tip" value="novice9"/>
+            <int name="job" value="16"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="novice">
+        <string name="1" value="Take a moment to look at all the gear you find. Everything has been customized."/>
+        <string name="0" value="1st job advancement can be completed after clearing Zone 1!"/>
+    </imgdir>
+    <imgdir name="novice2">
+        <string name="0" value="After you clear a zone, potions found in that zone are unlocked in Huckle&apos;s shop!"/>
+        <string name="1" value="Spend Ancient Coins at Rinne. All scrolls are custom and will significantly help your progression."/>
+    </imgdir>
+    <imgdir name="novice3">
+        <string name="0" value="Conquer the vault! &quot;Forge&quot; onward!"/>
+        <string name="1" value="All skill points earned before level 30 must be applied before making the 2nd job adv."/>
+        <string name="2" value="Overleveling past 30 will not lose you SP."/>
+    </imgdir>
+    <imgdir name="novice4">
+        <string name="0" value="There is more to the Hidden Corridor than is originally lead on..."/>
+    </imgdir>
+    <imgdir name="novice5">
+        <string name="0" value="The 3rd job advancement is available at level 70 (requires 2nd job advancement)."/>
+        <string name="1" value="All skill points earned before level 70 must be applied before making the 3rd job adv."/>
+    </imgdir>
+    <imgdir name="novice6">
+        <string name="0" value="The 4th job advancement is available at level 120 after 3rd job adv."/>
+        <string name="1" value="All skill points earned before level 120 must be applied before making the 4th job adv."/>
+    </imgdir>
+    <imgdir name="novice7">
+        <string name="0" value="Clearing the vault yields a pretty bounty..."/>
+    </imgdir>
+    <imgdir name="novice8">
+        <string name="0" value="Replace this tip. [novice8]"/>
+    </imgdir>
+    <imgdir name="novice9">
+        <string name="0" value="Replace this tip. [novice9]"/>
+    </imgdir>
+</imgdir>

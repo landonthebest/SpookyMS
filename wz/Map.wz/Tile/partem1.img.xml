@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="partem1.img">
+    <imgdir name="info" />
+    <imgdir name="bsc">
+        <canvas name="0" width="90" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="0" />
+        </canvas>
+        <canvas name="1" width="90" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="0" />
+        </canvas>
+        <canvas name="2" width="90" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="0" />
+        </canvas>
+        <canvas name="3" width="90" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="0" />
+        </canvas>
+        <canvas name="4" width="90" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="enH0">
+        <canvas name="0" width="90" height="39">
+            <vector name="origin" x="0" y="39" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="0" y="-34" />
+                <vector name="foothold" x="90" y="-34" />
+            </extended>
+        </canvas>
+        <canvas name="1" width="90" height="41">
+            <vector name="origin" x="0" y="41" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="0" y="-34" />
+                <vector name="foothold" x="90" y="-34" />
+            </extended>
+        </canvas>
+        <canvas name="2" width="90" height="39">
+            <vector name="origin" x="0" y="39" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="0" y="-34" />
+                <vector name="foothold" x="90" y="-34" />
+            </extended>
+        </canvas>
+    </imgdir>
+    <imgdir name="enH1">
+        <canvas name="0" width="90" height="26">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+        </canvas>
+        <canvas name="1" width="90" height="31">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+        </canvas>
+        <canvas name="2" width="90" height="31">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+        </canvas>
+    </imgdir>
+    <imgdir name="enV0">
+        <canvas name="0" width="22" height="60">
+            <vector name="origin" x="22" y="0" />
+            <int name="z" value="-2" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="-20" y="60" />
+                <vector name="foothold" x="-20" y="0" />
+            </extended>
+        </canvas>
+        <canvas name="1" width="21" height="60">
+            <vector name="origin" x="21" y="0" />
+            <int name="z" value="-2" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="-20" y="60" />
+                <vector name="foothold" x="-20" y="0" />
+            </extended>
+        </canvas>
+    </imgdir>
+    <imgdir name="enV1">
+        <canvas name="0" width="16" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="-2" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="21" y="0" />
+                <vector name="foothold" x="21" y="60" />
+            </extended>
+        </canvas>
+        <canvas name="1" width="14" height="60">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="-2" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="21" y="0" />
+                <vector name="foothold" x="21" y="60" />
+            </extended>
+        </canvas>
+    </imgdir>
+    <imgdir name="edU">
+        <canvas name="0" width="41" height="39">
+            <vector name="origin" x="20" y="39" />
+            <int name="z" value="-4" />
+            <extended name="foothold">
+                <vector name="foothold" x="-20" y="0" />
+                <vector name="foothold" x="-20" y="-34" />
+                <vector name="foothold" x="21" y="-34" />
+                <vector name="foothold" x="21" y="0" />
+            </extended>
+        </canvas>
+    </imgdir>
+    <imgdir name="edD">
+        <canvas name="0" width="22" height="18">
+            <vector name="origin" x="10" y="0" />
+            <int name="z" value="-4" />
+            <imgdir name="map" />
+        </canvas>
+    </imgdir>
+    <imgdir name="slLU">
+        <canvas name="0" width="90" height="99">
+            <vector name="origin" x="90" y="99" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="-90" y="-34" />
+                <vector name="foothold" x="0" y="-94" />
+            </extended>
+        </canvas>
+    </imgdir>
+    <imgdir name="slRU">
+        <canvas name="0" width="90" height="99">
+            <vector name="origin" x="0" y="99" />
+            <int name="z" value="-3" />
+            <imgdir name="map" />
+            <extended name="foothold">
+                <vector name="foothold" x="0" y="-94" />
+                <vector name="foothold" x="90" y="-34" />
+            </extended>
+        </canvas>
+    </imgdir>
+    <imgdir name="slLD">
+        <canvas name="0" width="90" height="83">
+            <vector name="origin" x="90" y="0" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="slRD">
+        <canvas name="0" width="90" height="81">
+            <vector name="origin" x="0" y="0" />
+            <int name="z" value="0" />
+            <string name="_outlink" value="Map/Tile/_Canvas/partem1.img/slRD/0" />
+        </canvas>
+    </imgdir>
+</imgdir>

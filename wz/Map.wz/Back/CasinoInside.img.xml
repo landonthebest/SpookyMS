@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="CasinoInside.img">
+    <imgdir name="back">
+        <canvas name="0" width="1300" height="750">
+            <vector name="origin" x="179" y="180" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="ani" />
+</imgdir>

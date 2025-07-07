@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="WorldMap.img">
+    <imgdir name="info" />
+    <imgdir name="BaseImg">
+        <canvas name="0" width="640" height="470">
+            <vector name="origin" x="320" y="235" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="MapList">
+        <imgdir name="0">
+            <int name="type" value="3" />
+            <string name="title" value="Kora" />
+            <string name="desc" value="The hub for the entire adventure!" />
+            <imgdir name="mapNo">
+                <int name="0" value="100000203" />
+                <int name="1" value="910000000" />
+                <int name="2" value="200000301" />
+                <int name="3" value="100000001" />
+                <int name="4" value="910000002" />
+            </imgdir>
+            <vector name="spot" x="-12" y="12" />
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="mapNo">
+                <int name="0" value="100020000" />
+                <int name="1" value="100020100" />
+                <int name="2" value="103000000" />
+                <int name="3" value="103000001" />
+                <int name="4" value="103000002" />
+                <int name="5" value="103000006" />
+                <int name="6" value="103000100" />
+                <int name="7" value="103000101" />
+                <int name="8" value="103000902" />
+                <int name="9" value="103000007" />
+            </imgdir>
+            <vector name="spot" x="-230" y="-108" />
+            <string name="title" value="Zone 2" />
+            <int name="type" value="3" />
+            <string name="desc" value="Smog Over Kerning" />
+        </imgdir>
+        <imgdir name="2">
+            <string name="desc" value="Descent Into The Vault" />
+            <imgdir name="mapNo">
+                <int name="0" value="260010000" />
+                <int name="1" value="260010200" />
+                <int name="4" value="260020100" />
+                <int name="7" value="260020621" />
+                <int name="8" value="260010300" />
+                <int name="9" value="260010400" />
+                <int name="10" value="260010700" />
+            </imgdir>
+            <vector name="spot" x="-103" y="-138" />
+            <string name="title" value="Zone 3" />
+            <int name="type" value="3" />
+        </imgdir>
+    </imgdir>
+    <imgdir name="MapLink">
+        <imgdir name="0">
+            <string name="toolTip" value="Kora" />
+            <imgdir name="link">
+                <string name="linkMap" value="WorldMap000" />
+                <canvas name="linkImg" width="63" height="49">
+                    <vector name="origin" x="42" y="9" />
+                    <int name="z" value="1" />
+                </canvas>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="link">
+                <string name="linkMap" value="WorldMap010" />
+                <canvas name="linkImg" width="100" height="100">
+                    <vector name="origin" x="280" y="153" />
+                    <int name="z" value="1" />
+                </canvas>
+            </imgdir>
+            <string name="toolTip" value="Zone 2" />
+        </imgdir>
+        <imgdir name="2">
+            <imgdir name="link">
+                <string name="linkMap" value="WorldMap070" />
+                <canvas name="linkImg" width="160" height="170">
+                    <vector name="origin" x="188" y="218" />
+                    <int name="z" value="1" />
+                </canvas>
+            </imgdir>
+            <string name="toolTip" value="Zone 3" />
+        </imgdir>
+    </imgdir>
+</imgdir>

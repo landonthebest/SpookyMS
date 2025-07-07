@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="Spooky.img">
+    <imgdir name="back">
+        <canvas name="0" width="2600" height="1250">
+            <vector name="origin" x="253" y="220" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="ani" />
+</imgdir>

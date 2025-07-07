@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9800052.img">
+    <imgdir name="info">
+        <imgdir name="script">
+            <imgdir name="0">
+                <string name="script" value="slayer" />
+            </imgdir>
+        </imgdir>
+        <int name="dcLeft" value="-39" />
+        <int name="dcTop" value="-81" />
+        <int name="dcRight" value="33" />
+        <int name="dcBottom" value="-1" />
+    </imgdir>
+    <imgdir name="stand">
+        <canvas name="0" width="75" height="75">
+            <vector name="origin" x="36" y="74" />
+            <int name="z" value="0" />
+            <int name="delay" value="2500" />
+        </canvas>
+        <canvas name="1" width="75" height="75">
+            <int name="delay" value="120" />
+            <vector name="origin" x="36" y="74" />
+            <int name="z" value="0" />
+        </canvas>
+        <canvas name="2" width="75" height="75">
+            <int name="delay" value="120" />
+            <vector name="origin" x="36" y="74" />
+            <int name="z" value="0" />
+        </canvas>
+        <canvas name="3" width="75" height="75">
+            <int name="delay" value="120" />
+            <vector name="origin" x="36" y="74" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+</imgdir>

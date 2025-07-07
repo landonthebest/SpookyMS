@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="QuestInfo.img">
+    <imgdir name="1000">
+        <string name="name" value="Certified Tank"/>
+        <string name="1" value="The urban legend &quot;White Lady&quot; is real and I met her...\n\nShe told me of how she was murdered. She keeps saying, if my #requipment had more HP#k, I would have survived the attack myself."/>
+        <string name="2" value="I promised the &quot;White Lady&quot; I would have protected her and proved it to her with my gear.\n\nShe gave me a very rare #rmedal#k and told me not to lose it..."/>
+        <int name="area" value="0"/>
+        <string name="rewardSummary" value="???"/>
+        <string name="0" value="???"/>
+    </imgdir>
+    <imgdir name="1001">
+        <string name="name" value="Forge the Black Key"/>
+        <string name="1" value="I spoke with Eleska who aspires to be a great forgemaster some day. She came here in search of resources her current forgemaster asked her to find. She said if I can gather the appropriate resources, she will #rforge the key#k as practice...\n\nA win-win I guess, I get the key, she get&apos;s to show her forgemaster her improvement...\n\nShe mentioned that I can get leather from #rBoars#k and the flaming feather comes from #rFire Boars#k!"/>
+        <string name="2" value="I provided the resources to Eleska and she showed me what forgemasters are capable of by forging the #rBlack Key#k..."/>
+        <int name="area" value="3"/>
+        <string name="0" value="Eleska thinks she can forge the #rBlack Key#k..."/>
+        <string name="demandSummary" value="#i4000018:# #t4000018:# #c4000018:# / 10
+#i4000197:# #t4000197:# #c4000197:# / 10
+#i4000021:# #t4000021:# #c4000021:# / 4
+#i4001006:# #t4001006:# #c4001006:# / 1"/>
+        <string name="rewardSummary" value="EXP 75000\n
+#i3997002:# #t3997002:#"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1003">
+        <string name="name" value="Help A Brother Out"/>
+        <string name="0" value="Byron needs help with his brother..."/>
+        <string name="1" value="Speaking with Byron, he&apos;s a bit pushy and his brother is a bit weak. They seem perfect for each other. Good to have a balance, ya know?\n\nByron said that one of the #rnearby monsters#k ran off with his brothers water while they were sleeping. Now, he&apos;s acting like he&apos;s about to die...\n\nHe said if I got his brothers water, they would trade a #rmap#k they were given by another vault hunter..."/>
+        <string name="2" value="After returning Christopher&apos;s water, I was given a map to the #bHidden Oasis#k!"/>
+        <int name="area" value="3"/>
+        <string name="demandSummary" value="#i4007013:# #t4007013:# #c4007013:# / 1"/>
+        <string name="rewardSummary" value="EXP 30000\n
+#i3997004:# #t3997004:#"/>
+    </imgdir>
+    <imgdir name="1004">
+        <string name="name" value="Winston&apos;s Hat Collection"/>
+        <string name="1" value="Speaking with Winston, apparently there&apos;s only one thing he loves more than fossils, #rhats#k. He couldn&apos;t wait to show me his hat.\n\nHe&apos;s too old now to hunt and find all the #rbamboo hats#k in the region, so he asked me to do so for him."/>
+        <string name="2" value="I collected one of each bamboo hat and gifted them to Winston. In return, he gave us one of the prized #rfashionista# cards, #2!"/>
+        <int name="area" value="3"/>
+        <string name="0" value="Winston wants to share his love of...hats(?)...with you..."/>
+        <string name="demandSummary" value="#i1002026:# #t1002026:# #c1002026:# / 1
+#i1002089:# #t1002089:# #c1002089:# / 1
+#i1002090:# #t1002090:# #c1002090:# / 1
+#i1004000:# #t1004000:# #c1004000:# / 1
+#i1004001:# #t1004001:# #c1004001:# / 1"/>
+        <string name="rewardSummary" value="EXP 15000\n
+???"/>
+    </imgdir>
+    <imgdir name="1005">
+        <string name="name" value="Solve the Riddles"/>
+        <string name="0" value="Adonis want&apos;s to talk about accessing the vault..."/>
+        <string name="1" value="Adonis said, in order to access the vault, I need to solve all three #rstatues#k. Each statue would give me a piece to the vault key.\n\nHe mentioned the #rmap#k I received from the #bbrothers#k and the #rclue#k I received from #bZara#k to get started."/>
+        <string name="2" value="I solved all three riddles and collected all three pieces of the #rBlack Vault Key#k..."/>
+        <int name="area" value="3"/>
+        <int name="autoStart" value="1"/>
+        <string name="demandSummary" value="Collect the #rBlack Vault Key#k!\n\n
+#i3997002:# #t3997002:# #c3997002:# / 1"/>
+        <string name="rewardSummary" value="Access to #bThe Vault#k!"/>
+    </imgdir>
+    <imgdir name="1006">
+        <string name="name" value="Meet The Collector"/>
+        <string name="1" value="I should find #bThe Collector#k. I think he goes by &quot;Grubby&quot;. The townspeople say he may be able to help me out. He said he was somewhere in #bKora City#k."/>
+        <string name="2" value="I found #bThe Collector#k!\n\nHe gave me this ring and told me to collect &quot;things&quot; for him. He says my ring can grow in power and not to lose it..."/>
+        <int name="area" value="0"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1007">
+        <string name="name" value="Warp Token: Kora Garden"/>
+        <string name="1" value="I found a #rWarp Token#k!\n\nApparently #bOmnar#k likes to eat(?) these?"/>
+        <string name="2" value="I brought the #rWarp Token#k to #bOmnar#k. He gobbled it up and opened up the #bKora Garden#k fast travel point for me!"/>
+        <int name="area" value="0"/>
+        <int name="autoStart" value="1"/>
+        <string name="rewardSummary" value="#bKora Garden#k Fast Warp"/>
+    </imgdir>
+    <imgdir name="1008">
+        <string name="1" value="I found a #rWarp Token#k!\n\nApparently #bOmnar#k likes to eat(?) these?"/>
+        <string name="2" value="I brought the #rWarp Token#k to #bOmnar#k. He gobbled it up and opened up the #bKerning City#k fast travel point for me!"/>
+        <int name="area" value="0"/>
+        <int name="autoStart" value="1"/>
+        <string name="name" value="Warp Token: Kerning City"/>
+        <string name="rewardSummary" value="#bKerning City#k Fast Warp"/>
+    </imgdir>
+    <imgdir name="1009">
+        <string name="1" value="I found a #rWarp Token#k!\n\nApparently #bOmnar#k likes to eat(?) these?"/>
+        <string name="2" value="I brought the #rWarp Token#k to #bOmnar#k. He gobbled it up and opened up the #bStoneweaver Village#k fast travel point for me!"/>
+        <int name="area" value="0"/>
+        <int name="autoStart" value="1"/>
+        <string name="name" value="Warp Token: Stoneweaver Village"/>
+        <string name="rewardSummary" value="#bStoneweave Village#k Fast Warp"/>
+    </imgdir>
+    <imgdir name="1010">
+        <string name="name" value="Popular People Only"/>
+        <string name="1" value="#bShumi#k said her agent told her not to mingle with people who aren&apos;t popular..."/>
+        <string name="2" value="I got a little bit more famous and #bShumi#k referred me to her stylist..."/>
+        <int name="area" value="2"/>
+        <string name="0" value="#bShumi#k says I&apos;m not popular enough..."/>
+    </imgdir>
+    <imgdir name="1011">
+        <string name="name" value="Free Makeover"/>
+        <string name="0" value="#bDon Giovanni#k will give me a free makeover..."/>
+        <string name="1" value="I should head over to the #bKerning Barbershop#k and get my makeover..."/>
+        <string name="2" value="Well, I don&apos;t know what to say. I read the fine print (I think) and I got what I asked for, I guess..."/>
+        <int name="area" value="2"/>
+    </imgdir>
+    <imgdir name="1012">
+        <string name="name" value="Novice Craftsman"/>
+        <string name="1" value="I spoke with #bEleska#k and she said to learn the ways of the forge masters, I&apos;ll need to gather her a few not so common materials.\n\n#eShe also mentioned I would get a handy-dandy #rguide book#k on how to use the forge system!#n"/>
+        <string name="2" value="I collected the #rStar Rock, Moon Rock and Maple Leaf#k for #bEleska#k and in-turn, she taught me how to craft on my own!"/>
+        <int name="area" value="4"/>
+        <string name="0" value="#bEleska#k is back in #bSuncrest Vale#k and she thinks I&apos;m ready to learn the ways of the #eForge Masters#n!"/>
+        <string name="summary" value="Find a way to get a #rStar Rock#k, #rMoon Rock#k and a #rMaple Leaf#k for #bEleska#k."/>
+        <string name="demandSummary" value="\n
+#i4011007:# #t4011007:# #c4011007:# / 1
+#i4021009:# #t4021009:# #c4021009:# / 1
+#i4001126:# #t4001126:# #c4001126:# / 1"/>
+        <string name="rewardSummary" value="EXP 90000\n\n#eSkill:#n #rForge Lvl. 1#k"/>
+        <string name="type" value="[Skill]"/>
+    </imgdir>
+    <imgdir name="1013">
+        <string name="name" value="Help the Fairies Fight Back"/>
+        <string name="1" value="#bArwen#k came all the way from the forest to get help for the local fairies. She gave me orders to take out a large number of them...\n\nIt seems like a lot, but she said she has something rare to give in return for my help. She noted the heaviest concentration is near the camp. I should get to work..."/>
+        <string name="2" value="I defeated all of the automatons and #bArwen#k rewarded me with a rare stone that fell in the forest before she left."/>
+        <int name="area" value="4"/>
+        <string name="0" value="#bArwen#k heard the fairies in this region were in trouble and she was right. The valley is overrun with automatons! I should talk to her to see how I can help out."/>
+        <string name="demandSummary" value="#eRequired Monster Kill(s):#n
+#o5200000# #a10131#
+#o3000000# #a10132#
+#o5130101# #a10133#
+#o5200001# #a10134#
+#o5200002# #a10135#
+#o5150003# #a10136#
+#o5150002# #a10137#"/>
+        <string name="rewardSummary" value="EXP 90000\n
+#i4021009:# #t4021009:#"/>
+        <string name="type" value="[Hunt]"/>
+    </imgdir>
+    <imgdir name="1014">
+        <string name="name" value="Perfect Choice"/>
+        <string name="1" value="After talking with both of them and hearing their reasons why each one deserves the gear. I&apos;m left with the choice of deciding who I want to impress more..."/>
+        <string name="2" value="She was always the right choice..."/>
+        <int name="area" value="4"/>
+        <string name="0" value="#bCorine#k and #bRobin#k are arguing over who deserves new gear more..."/>
+        <string name="summary" value="#bRobin#k &amp; #bCorine#k are both asking for lvl 35 archer top and bottom. I can only choose one or the other to help out. I better choose wisely..."/>
+        <string name="demandSummary" value="\n#eRequired Item(s):#n
+#i1041061:# #t1041061:# #c1041061:# / 1
+#i1061057:# #t1061057:# #c1061057:# / 1"/>
+        <string name="rewardSummary" value="EXP 90000\nA special #rmedal#k to show your affection."/>
+        <string name="type" value="[Choice]"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1015">
+        <string name="name" value="Fight or Flight"/>
+        <string name="1" value="While #bDella#k was out scouting the ruins for her research papers.\n\nJust as she started inspecting these ones, the nearby stone came to life and began attacking her! She climbed to the top of this old castle and is now stuck.\n\nI&apos;ll have to find a way for her to get back to camp safely..."/>
+        <string name="2" value="I forged the #rFairy Wing Cape#k and #bDella#k used it to fly back to camp."/>
+        <int name="area" value="4"/>
+        <string name="0" value="#bDella#k is too scared to come down... I&apos;d better help her out."/>
+        <string name="demandSummary" value="Find a way to get #bDella#k back to town safely...\n\n
+#eRequired Item(s):#n
+#i4007022:# #t4007022:# #c4007022:# / 1"/>
+        <string name="rewardSummary" value="EXP 75000\nFAME: +1\n
+#i4310000:# #t4310000:# 15"/>
+        <string name="type" value="[Craft]"/>
+    </imgdir>
+    <imgdir name="1016">
+        <string name="name" value="Treasure Hunt"/>
+        <string name="0" value="#bHill#k says he has a map to a great treasure...For the right price..."/>
+        <string name="1" value="I purchased the #rmap#k from #bHill#k, I should work on finding the location of the #rtreasure#k."/>
+        <string name="2" value="#bHill#k took my two gold ore and left me with this #rtreasure map#k, seems like it could be really valuable, I should go looking for it..."/>
+        <int name="area" value="4"/>
+        <string name="summary" value="Solve the riddle and uncover the treasure!"/>
+        <string name="type" value="[Solve]"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1017">
+        <string name="name" value="Queen Robin"/>
+        <string name="0" value=""/>
+        <string name="1" value=""/>
+        <string name="2" value="I gave the gear to #bRobin#k and she gave me a medal in return!"/>
+        <int name="area" value="4"/>
+    </imgdir>
+    <imgdir name="1018">
+        <string name="name" value="Queen Corine"/>
+        <string name="0" value=""/>
+        <string name="1" value=""/>
+        <string name="2" value="I gave the gear to #bCorine#k and she gave me a medal in return!"/>
+        <int name="area" value="4"/>
+    </imgdir>
+    <imgdir name="1019">
+        <string name="name" value="Anti-Hero"/>
+        <string name="0" value="#bScon#k doesn&apos;t appear to be from this world..."/>
+        <string name="1" value="#bScon#k told me he was something of an &quot;Anti-Hero&quot; but not in the traditional sense. In his home world, they get stronger by having worse gear???\n\nHe asked that I bring him some of the worst gear our world has to offer."/>
+        <string name="2" value="I delivered the worst gear I could find to #bScon#k and he returned the favor with a ton of experience and a #rMaple Leaf#k."/>
+        <int name="area" value="4"/>
+        <string name="demandSummary" value="#bScon#k isn&apos;t looking for any old gear, he is looking for the WORST gear. I need to bring him a glove, a shoe, or a ring with #r#eno main stat#k#n.\n
+#i1072004:# #t1072004:#
+#i1112921:# #t1112921:#
+#i1082002:# #t1082002:#"/>
+        <string name="rewardSummary" value="EXP 90000\nFAME: +3
+#i4001126:# #t4001126:#
+#i5220010:# #t5220010:# x2"/>
+        <string name="type" value="[Collect]"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1020">
+        <string name="name" value="Elixir of Life"/>
+        <string name="0" value="#bFeylorn#k is not looking too well, he needs our help..."/>
+        <string name="1" value="I found #bFeylorn#k at the entrance to the ruins. He took a bad fall on the way down. He needs more than your average potion to get back up to health. I should find a way to craft a #rPowerful Elixir#k to help him out."/>
+        <string name="2" value="I crafted the #rPowerful Elixir#k and delivered it to #bFeylorn#k, he was up and at em in no time!"/>
+        <int name="area" value="4"/>
+        <string name="demandSummary" value="#eRequired Item(s):#n
+#i4007026:# #t4007026:# #c4007026:# / 1"/>
+        <string name="rewardSummary" value="EXP 110000\nFAME: +1\n
+#Wselect#
+#i1082000:# #t1082000:#
+#i1082014:# #t1082014:#
+#i1082022:# #t1082022:#
+#i1082033:# #t1082033:#
+#i1082183:# #t1082183:#"/>
+        <string name="type" value="[Craft]"/>
+    </imgdir>
+    <imgdir name="1021">
+        <string name="name" value="Whack Them Chickens!"/>
+        <string name="0" value="#bCloy#k thinks I&apos;m ready to learn my first pet skill."/>
+        <string name="1" value="#bCloy#k says she will train as many of my pets to run fast as I like. I just have to collect an egg each time!"/>
+        <string name="2" value="I whacked all them chickens real good. Now my pet is zoomin."/>
+        <int name="area" value="4"/>
+        <string name="type" value="[Skill]"/>
+    </imgdir>
+    <imgdir name="1022">
+        <string name="name" value="Rune Collection"/>
+        <string name="0" value="#bFrancois#k was sent here by the mages guild. He&apos;s looking for some #rrunes#k and the mages guild believes that the monsters in the ruins may be the key..."/>
+        <string name="1" value="I spoke with #bFrancois#k and he said, &quot;It&apos;s thought that the monsters in the ruins still harbor ancient power... Could you investigate and bring back some samples?&quot;\n\nWe&apos;ll need one #rsmall rune sample#k and one #rlarge rune sample#k.\n\nHe also mentioned that I could have the recipe to a #rvery powerful elixir#k if I helped him complete his quest."/>
+        <string name="2" value="I collected samples from the ruins monsters and brought them back to #bFrancois#k...\n\nI thought I&apos;d get a recipe for usable elixirs, instead I got a recipe for a single, #rpotion#k..."/>
+        <int name="area" value="4"/>
+        <string name="demandSummary" value="#eRequired Item(s):#n
+#i4007024:# #t4007024:# #c4007024:# / 1
+#i4007025:# #t4007025:# #c4007025:# / 1"/>
+        <string name="rewardSummary" value="EXP 90000\n
+#Wselect#
+#i5220020:# #t5220020:#
+#i5220010:# #t5220010:#
+#Wbasic#
+#i4007027:# #t4007027:#"/>
+        <string name="type" value="[Collect]"/>
+    </imgdir>
+    <imgdir name="1023">
+        <string name="name" value="I Need Materials!"/>
+        <string name="0" value="#bVicious#k has an open order for crafting materials, maybe I could help out."/>
+        <string name="1" value="#bVicious#k provided a long list of materials he needs for something big he&apos;s crafting."/>
+        <string name="2" value="I provided all the required materials to #bVicious#k and in return he provided me with a torn page from his forge masters diary. Some sort of long lost recipe...\n\nHe also gave me back #rSteel Ore#k and mentioned that it &quot;might be useful&quot;."/>
+        <int name="area" value="4"/>
+        <string name="demandSummary" value="#eRequired Item(s):#n
+#i4010000:# #t4010000:# #c4010000:# / 4
+#i4010001:# #t4010001:# #c4010001:# / 4
+#i4010002:# #t4010002:# #c4010002:# / 4
+#i4010003:# #t4010003:# #c4010003:# / 4
+#i4010004:# #t4010004:# #c4010004:# / 4
+#i4010005:# #t4010005:# #c4010005:# / 4
+#i4010006:# #t4010006:# #c4010006:# / 4"/>
+        <string name="rewardSummary" value="EXP 90000\n
+#i3997007:# #t3997007:#"/>
+        <string name="type" value="[Collect]"/>
+    </imgdir>
+    <imgdir name="1024">
+        <string name="name" value="Enter the Ruins"/>
+        <string name="0" value="#bShuang&apos;s#k team is looking for help in the ruins."/>
+        <string name="1" value="The team has been hard at work solving the mysteries of the forge and helping new adventurers like me.\n\nMy current task is to find a way into the ruins and help #bFeylorn#k who is hurt on the inside."/>
+        <string name="2" value="I found the hidden entrance to the ruins, now I just need to figure out how to get through.\n\n#bShuang#k mentioned that the Forge is protected by a #bGuardian#k of some sort. No mention of where, or how strong it may be though. Sounds like I&apos;ve got to make my way through it, to get to the Forge."/>
+        <int name="area" value="4"/>
+        <string name="summary" value="Find a way into the #bManaforge Ruins#k!"/>
+        <string name="rewardSummary" value="EXP 15000"/>
+        <string name="type" value="[Solve]"/>
+        <int name="order" value="1"/>
+        <string name="parent" value="Get Through the Ruins"/>
+    </imgdir>
+    <imgdir name="1025">
+        <string name="name" value="Supplies for the Queen"/>
+        <string name="0" value="Somewhere in the ruins, is on of the #bQueen&apos;s Disciples#k..."/>
+        <string name="1" value="I found #bRoger#k. His skin is &quot;interesting&quot; to say the least.\n\nHe came here to gather supplies for the Queen, but once he found the right monster, he realized he wasn&apos;t strong enough. He asked me to collect #rCrystalized Eyes#k from the #rCold Eyes#k.\n\nApparently, this is a staple ingredient for the Queen."/>
+        <string name="2" value="I collected all the eyes he asked for and he gave me a #rFashionista Card#k!!!"/>
+        <int name="area" value="4"/>
+        <string name="demandSummary" value="#eRequired Item(s):#n
+#i4000027:# #t4000027:# #c4000027:# / 20"/>
+        <string name="rewardSummary" value="EXP 90000\n
+#i3996003:# #t3996003:#"/>
+        <string name="type" value="[Collect]"/>
+    </imgdir>
+    <imgdir name="1031">
+        <string name="name" value="The Forge is Dying"/>
+        <string name="0" value="Speak with #bMoki#k at the Forge."/>
+        <string name="1" value="#bMoki#k is in need of my help. He believes I can help stoke the Forge, once more. I need to craft #rThe Heart of the Forge#k.\n\nHe mentioned Francois might have more information on the topic in one of his books."/>
+        <string name="2" value="I spoke with #bFrancois#k and he found a mention of a &quot;#rwhite mage#k,&quot; but the rest of the text was too worn to read."/>
+        <int name="area" value="4"/>
+        <string name="parent" value="Restore the Forge"/>
+        <int name="order" value="1"/>
+        <string name="summary" value="Speak with #bFrancois#k."/>
+    </imgdir>
+    <imgdir name="1027">
+        <string name="name" value="Odd Piece of Ice"/>
+        <string name="0" value=""/>
+        <string name="1" value=""/>
+        <string name="2" value="#bJack#k gave me an odd piece of ice. Not sure what that&apos;s all about."/>
+        <int name="area" value="4"/>
+    </imgdir>
+    <imgdir name="1028">
+        <string name="name" value="Defeat the Forge Guardian"/>
+        <string name="0" value="I made it into the ruins, now I have to make it through..."/>
+        <string name="1" value="#bShuang#k mentioned that the Forge is protected by a #bGuardian#k of some sort. No mention of where, or how strong it may be though. Sounds like I&apos;ve got to make my way through it, to get to the Forge."/>
+        <string name="2" value="I defeated the #bForge Guardian#k and earned access to the Forge."/>
+        <int name="area" value="4"/>
+        <string name="summary" value="Defeat the #bForge Guardian#k."/>
+        <string name="rewardSummary" value="EXP 50000"/>
+        <string name="type" value="[Boss]"/>
+        <int name="order" value="2"/>
+        <string name="parent" value="Get Through the Ruins"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1029">
+        <string name="name" value="Speed Demon"/>
+        <string name="0" value="???"/>
+        <string name="1" value="I ran into a rather odd character who calls himself &quot;The Speed Demon&quot;. He said if I could prove I was faster than him, he would give me something nice. He doesn&apos;t seem very fast though? A bit odd, that one...."/>
+        <string name="2" value="Turns out he was super fast. However, I was faster.\n\nHe gave me a very rare #rmedal#k and told me not to lose it..."/>
+        <int name="area" value="4"/>
+        <string name="rewardSummary" value="???"/>
+    </imgdir>
+    <imgdir name="1037">
+        <string name="name" value="Getting Started"/>
+        <string name="0" value="#bSam#k at #rGreen Snails#k wants to help me get started, I should go find him..."/>
+        <string name="1" value="Sam asked me to take care of some snails, they been mukkin up the place. I better slay #r30 snails#k and let Sam know."/>
+        <string name="2" value="I told Sam I took care of the snails."/>
+        <int name="area" value="1"/>
+        <string name="rewardSummary" value="EXP 150\n
+#i3991000:# #t3991000:#
+#i2000000:# #t2000000:# 15
+#i2000003:# #t2000003:# 15
+#Wprob#
+#i3010000:# #t3010000:#
+#i3010004:# #t3010004:#
+#i3010005:# #t3010005:#"/>
+        <string name="demandSummary" value="#o100100# #a10371#"/>
+    </imgdir>
+    <imgdir name="2000">
+        <string name="name" value="Retrieve the Townspeoples Equipment"/>
+        <string name="0" value="Gary wants to clear his brothers name..."/>
+        <string name="1" value="At the entrance to #rThe Garden#k I ran into a familiar snail, Gary. He says his brother is misunderstood and wants to right the ship by returning the townspeople their equipment. He thought he saw a #rred#k, #rbrown#k, and #rgreen#k monster run off with them..."/>
+        <string name="2" value="I collected the equipment and returned it to Gary. In return he gave me a silk headband. It&apos;s not much, but it feels nice...\n\nHe also noted that #rHeena#k might know more about his brother..."/>
+        <int name="area" value="1"/>
+        <string name="summary" value="Return these items to Gary."/>
+        <string name="demandSummary" value="#i1082002:# #t1082002:# #c1082002# / 1
+#i1092003:# #t1092003:# #c1092003# / 1
+#i1302024:# #t1302024:# #c1302024# / 1
+
+"/>
+        <string name="rewardSummary" value="EXP 1500\n
+#i2000000:# 15
+#i2000003:# 15
+#Wprob#
+#i1002014:#
+#i1002066:#
+#i1002067:#
+#i1002068:#
+#i1002069:#
+"/>
+    </imgdir>
+    <imgdir name="2029">
+        <string name="name" value="Save Jake"/>
+        <string name="0" value="Find a way into the #bKerning Subway#k and make sure Jake is okay."/>
+        <string name="1" value="I found #rJake#k in the subway, he got away without a scratch. However, he&apos;s stuck now. He said he had a #rscrewdriver#k in his tool bag...but it fell out when he was running. He thought he saw one of the colored slimes bounce over it and absorb it.\n\nIf we could find his #rscrewdriver#k, he said he could battle his way out and start helping with the repairs.\n\nIn return he offered me a #rring#k he found...apparently he finds all kinds of jewelry down here."/>
+        <string name="2" value="I found Jake&apos;s screwdriver and he was able to escape. He promptly checked in on Bell and started repairs with the Roly-Poly workers."/>
+        <int name="area" value="2"/>
+        <string name="demandSummary" value="#i4031089:# #t4031089:# #c4031089# / 1"/>
+        <string name="rewardSummary" value="EXP 3750\n
+#i2000001:# 60
+#i2000006:# 60
+#Wselect#
+#i1112922:# #t1112922:#
+#i1112923:# #t1112923:#
+#i1112924:# #t1112924:#
+#i1112925:# #t1112925:#"/>
+    </imgdir>
+    <imgdir name="2062">
+        <string name="name" value="Estelle and the Lost Kite"/>
+        <string name="0" value="Estelle is trying to find Icarus&apos; kite...she looks a little scared..."/>
+        <string name="1" value="I ran into Estelle on the outskirts of town. She let me know that her and Icarus got split up when they got scared. She wants to go home but not without Icarus&apos;s #rkite#k. She said a &quot;dead&quot; tree came to life and ran off with it!!! She&apos;s too scared to show me, but she said it was somewhere by the other #bdead trees#k over there. She asked me to find the #rkite#k and clear out some &quot;dead&quot; trees while I do so. I should get her and the kite back home..."/>
+        <string name="2" value="I ran into #rEstelle#k on the outskirts of Kerning. She asked me to help find #rIcarus&apos;s#k kite and return it to him. I found it among the &quot;dead&quot; trees..."/>
+        <int name="area" value="2"/>
+        <int name="order" value="1"/>
+        <string name="parent" value="Estelle and the Lost Kite"/>
+        <string name="demandSummary" value="#i4000019:# #t4000019:# #c4000019# / 1
+#o1130100# #a20621#
+#o1140130# #a20622#"/>
+        <string name="rewardSummary" value="EXP 3500\n
+#i2000001:# 30
+#i2002031:# 30"/>
+    </imgdir>
+    <imgdir name="2071">
+        <string name="name" value="Dr. Squint&apos;s Great Idea"/>
+        <string name="0" value="I heard there is someone in Naora Hospital in Kerning City that recently got some work done..."/>
+        <string name="1" value="I met #b#p1012001##k in Naora Hospital in Kerning City. #b#p1052105##k was told by #rDr. Squint#k that the discovery of the new colored monsters could be revolutionary in healing her surgery. #b#p1012001##k asked me to hunt down 30 of each #rslime drop#k and 35 of each #rligator skin#k so he could test...on Jane?!??!\n\nHe also requested 5 #rOrchid Samples#k to help mitigate pain..."/>
+        <string name="2" value="I gathered all of the materials I could and gave them to Dr. Squint... Hopefully he puts them to good use. \n\nSeems like #rJane#k wants to give me something. I should talk with her."/>
+        <int name="area" value="2"/>
+        <string name="demandSummary" value="#i4000004:# #t4000004:# #c4000004# / 30
+#i4007008:# #t4007008:# #c4007008# / 30
+#i4007009:# #t4007009:# #c4007009# / 30
+#i4007010:# #t4007010:# #c4007010# / 30
+#i4000032:# #t4000032:# #c4000032# / 35
+#i4007018:# #t4007018:# #c4007018# / 35
+#i4007019:# #t4007019:# #c4007019# / 35
+#i4007020:# #t4007020:# #c4007020# / 35
+#i4031150:# #t4031150:# #c4031150# / 5"/>
+        <string name="rewardSummary" value="EXP 2000\n\n???
+"/>
+        <string name="parent" value="A New Healing Serum"/>
+        <int name="order" value="1"/>
+    </imgdir>
+    <imgdir name="2072">
+        <string name="name" value="Jane is Thankful"/>
+        <string name="parent" value="A New Healing Serum"/>
+        <int name="order" value="2"/>
+        <string name="1" value="Jane turned out to be a ghost... shocker... I guess the Doc really can&apos;t see much. I should accept the #rFashionista#k card from her..."/>
+        <string name="2" value="When the Doc went to apply the healing serum, there was no body to apply to. He was just hearing Jane. She was thankful I tried and gave me her limited edition #rFashionista #1#k trading card!"/>
+        <int name="area" value="2"/>
+    </imgdir>
+    <imgdir name="2128">
+        <string name="name" value="Starting Something Special"/>
+        <string name="0" value="The legendary trainer #b#p9201106##k wants to train me. I should take this opportunity. Let&apos;s see what he has to say!"/>
+        <string name="1" value="#p9201106# is suggesting to hunt some monsters. He told me to defeat #r50 #o1110100#s#k. #o1110100# can be found in the #bDense Forest#k. I should head to #bZone 2#k to look for them.\n\n#o1110100# #r#a21281##k"/>
+        <string name="2" value="I defeated #r50 #o1110100#s#k and reported to #p9201106#..simple eh?"/>
+        <int name="area" value="0"/>
+        <int name="autoStart" value="1"/>
+        <int name="autoComplete" value="1"/>
+    </imgdir>
+    <imgdir name="2132">
+        <string name="name" value="The Beauty Queen"/>
+        <string name="0" value="The Beauty Queen wants my cards!"/>
+        <string name="1" value="An odd, super enthusiastic, woman named Ari reached out. She was calling herself #rThe Beauty Queen#k and yelling at me about #rFashionista#k cards.\n\nI guess she really wants all five of these in return for a free makeover? I could use a new look..."/>
+        <string name="2" value="I collected all five #rFashionista#k cards, found #rThe Beauty Queen#k and traded my cards for her #rBeauty Coupon#k...Unlimited makeovers is nice..."/>
+        <int name="area" value="0"/>
+        <int name="autoStart" value="1"/>
+        <string name="demandSummary" value="#i3996001:# #t3996001:# #c3996001# / 1
+#i3996002:# #t3996002:# #c3996002# / 1
+#i3996003:# #t3996003:# #c3996003# / 1
+#i3996004:# #t3996004:# #c3996004# / 1
+#i3996005:# #t3996005:# #c3996005# / 1"/>
+        <string name="rewardSummary" value="#i3996006:# #t3996006:#
+"/>
+        <string name="summary" value="Collect all five cards, solve the riddle, find #rThe Beauty Queen#k!"/>
+    </imgdir>
+    <imgdir name="2136">
+        <string name="name" value="I Lost My Balloons!"/>
+        <string name="0" value="Bri lost all her balloons and she&apos;s giving big rewards to those that find them..."/>
+        <string name="1" value="I talked with #rBri#k, she seems really nice.\n\nUnfortunately all her balloons were blown away in a big wind storm. She thinks they are scattered all over the world. If I find them all she has a really nice reward for me! After talking for a while, she said they could be hidden anywhere. Really, just about anywhere.\n\n#e#rShe said to pay attention to my surroundings, listen to what people say, read their speech bubbles, etc...#k#n"/>
+        <string name="2" value="I found all the balloons and Bri gave me a permanent pet vac!!!"/>
+        <int name="area" value="0"/>
+        <string name="demandSummary" value="#i3996010:# #t3996010:# (Overworld) #c3996010# / 1
+#i3996011:# #t3996011:# (Zone 2) #c3996011# / 1
+#i3996012:# #t3996012:# (Zone 3) #c3996012# / 1
+#i3996013:# #t3996013:# (Zone 4) #c3996013# / 1
+#i3996014:# #t3996014:# #c3996014# / 1
+#i3996015:# #t3996015:# #c3996015# / 1
+#i3996016:# #t3996016:# #c3996016# / 1
+#i3996017:# #t3996017:# #c3996017# / 1
+#i3996018:# #t3996018:# #c3996018# / 1
+#i3996019:# #t3996019:# #c3996019# / 1"/>
+        <string name="rewardSummary" value="???
+"/>
+        <string name="summary" value="Find all 10 colored balloons scattered throughout the world and return them to Bri!"/>
+    </imgdir>
+    <imgdir name="21701">
+        <string name="name" value="Where I Come From..."/>
+        <int name="area" value="2"/>
+        <string name="0" value="Alex wants to teach you a thing or two about being an Aran!"/>
+        <string name="2" value="You eliminated the Blue Mushrooms and brought Alex a Frozen Tuna. He rewarded you with his basic knowledge of the Aran!"/>
+        <string name="type" value="[Skill]"/>
+        <string name="1" value="#rAlex#k said his father was a mighty warrior and before he ran away, he used to train with him. He wants to teach you as well..."/>
+        <string name="demandSummary" value="#i1442039:# #t1442039:# #c1442039# / 1
+#o2220100# #a217011#"/>
+        <string name="rewardSummary" value="Skill Unlock: #rCombo Ability#k\nSkill Unlock: #rPolearm Booster#k"/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="2213">
+        <string name="name" value="Source of the Pollution"/>
+        <string name="parent" value="Smog Over Kerning"/>
+        <string name="0" value="#rJM#k is looking for someone to uncover the hidden truth about the smog, colored slimes and tunnel collapse."/>
+        <string name="1" value="I spoke with the mayor #rJM#k. He didn&apos;t trust me at first but since I&apos;ve helped out so many of Kernings residents, he wants me to figure out what is happening to the city. He said there is no better person to start with other than #rNella#k.\n\n She didn&apos;t want to talk to me at first, but now that I have this investigation permit, maybe things will change."/>
+        <string name="2" value="I spoke with Nella and found out that Mong wasn&apos;t who he said he was..."/>
+        <int name="area" value="2"/>
+        <int name="order" value="1"/>
+        <string name="rewardSummary" value="EXP 1500"/>
+    </imgdir>
+    <imgdir name="2214">
+        <string name="name" value="Wong?...from Dong??"/>
+        <string name="parent" value="Smog Over Kerning"/>
+        <int name="order" value="2"/>
+        <string name="0" value="I should confront Wong about his identity..."/>
+        <string name="1" value="I talked to Wong about his identity, it&apos;s all true and he told me he was being forced into by his boss... GOLD RICHIE!!?!?!!\n\nI need to tell JM, immediately."/>
+        <int name="area" value="2"/>
+        <string name="2" value="JM could not believe that Gold Richie was in his city, that slimy two bit pirate. JM said we need to find him and put a stop to his operations. Wong never actually met Gold Richie in person. He only had a drop off location and that Gold Richie would #bbe somewhere nearby, because he is too lazy to walk far#k."/>
+        <string name="rewardSummary" value="EXP 1500
+"/>
+    </imgdir>
+    <imgdir name="2215">
+        <string name="name" value="Find Gold Richie"/>
+        <string name="1" value="I told JM about #rGold Richie#k. We have to find him right away...\n\nWong from Dong said #rGold Richie#k should be holed up in #bthe building somewhere around the telephone booth at midtown#k."/>
+        <string name="2" value="I found and confronted Gold Richie.\n\n He was running a smelting operation for various gems and ores. The excess production was running off into the water line, which caused the new slimes to appear."/>
+        <int name="area" value="2"/>
+        <int name="order" value="3"/>
+        <string name="parent" value="Smog Over Kerning"/>
+        <string name="rewardSummary" value="EXP 1500
+"/>
+    </imgdir>
+    <imgdir name="2216">
+        <string name="name" value="The Cause of the Earthquakes"/>
+        <string name="0" value="As I confronted Gold Richie, the building started to shake again... It felt just like Jake described. I should tell #rJM#k."/>
+        <string name="1" value="As I approached #rJM#k the ground started shaking again.\n\nJM noted we need to find the cause before the city comes down around us.\n\nHe said, #rErvine#k noted some unusual issues with the water system in his last report. I should talk with him."/>
+        <string name="2" value="#rGold Richie#k was running an illegal ore and gem smelting operation. The runoff was leaking down into the water system. That was the cause of all the pollution and new slimes.\n\n#rErvine#k said he ran into a #rHUGE Slime#k in the sewers. He gave me his #rkey#k and told me to tell JM right away.\n\n It&apos;s just me and the #rKing#k now."/>
+        <int name="area" value="2"/>
+        <int name="order" value="4"/>
+        <string name="parent" value="Smog Over Kerning"/>
+        <string name="rewardSummary" value="EXP 1500
+"/>
+    </imgdir>
+    <imgdir name="2217">
+        <string name="name" value="Down With the King"/>
+        <string name="0" value="I need to tell JM about the large slime..."/>
+        <string name="1" value="With no hesitation, JM put me in charge of taking down #rKing Slime#k and saving the city."/>
+        <string name="2" value="I defeated #rKing Slime#k, saved the city and cleared #rZone 2#k."/>
+        <int name="area" value="2"/>
+        <string name="demandSummary" value="#i3996020:# #t3996020:# #c3996020# / 1"/>
+        <string name="rewardSummary" value="#bHuckle Shop Update#k\n
+#bZone 3 Unlock#k
+#Wprob#
+#i1051017:# 개
+#i1050018:# 개
+"/>
+        <string name="summary" value="Enter the #bsewers#k, defeat #rKing Slime#k!"/>
+    </imgdir>
+    <imgdir name="28268">
+        <string name="name" value="Find Jake!"/>
+        <string name="0" value="#rBell#k made it out of the tunnel, but what about #rJake#k? Talk to #rBell#k..."/>
+        <string name="1" value="I talked with #rBell#k and he is doing fine, little short for breath, but okay overall. He said Jake got trapped on the other side of the collapse. I have to find a way into the subway!"/>
+        <string name="2" value="I was able to make the jump to the beam and found Jake in the subway..."/>
+        <int name="area" value="2"/>
+        <string name="rewardSummary" value="EXP 1000
+"/>
+    </imgdir>
+    <imgdir name="28269">
+        <string name="name" value="Heat Wave Preparation!"/>
+        <string name="0" value="Zara&apos;s out gathering supplies for her mother and father. She said she found something important..."/>
+        <string name="1" value="Speaking with Zara, she believes she found a #rclue#k to get into #bThe Vault#k of #bBlazing Peak Mountain#k.\n\nShe&apos;s willing to give it up in exchange for help collecting supplies for the annual heat wave."/>
+        <string name="2" value="I helped collect all the resources to help the Stoneweavers prepare for the heat wave. Young Zara was quite thankful, she reluctantly gave up that piece of paper she found."/>
+        <int name="area" value="3"/>
+        <string name="demandSummary" value="#i4000330:# #t4000330:# #c4000330# / 75
+#i4000018:# #t4000018:# #c4000018# / 75
+#i4000350:# #t4000350:# #c4000350# / 75
+#i4000197:# #t4000197:# #c4000197# / 75"/>
+        <string name="rewardSummary" value="EXP 17,500
+#i3996007:# #t3996007:#"/>
+    </imgdir>
+    <imgdir name="28270">
+        <string name="name" value="Thorne gets cold at night..."/>
+        <string name="0" value="Little Thorne looks cold, maybe I could help out..."/>
+        <string name="1" value="Ayan asked that I collect #rbasic cloth#k so she can knit a new blanket for Thorne. I guess at night it gets quite cold on top of the mountain...\n\nAyan mentioned they drop from #rScorpion#k and #rBellamoa#k."/>
+        <string name="2" value="After I collected the cloth for Ayan, she quickly knit Thorne a soft blanket.\n\nAyan began to tell him an interesting #rstory#k, but he quickly fell asleep..."/>
+        <int name="area" value="3"/>
+        <string name="demandSummary" value="#i4007011:# #t4007011:# #c4007011# / 4"/>
+        <string name="rewardSummary" value="EXP 30000\n
+#Wselect#\n
+#i1112926:# #t1112926:#
+#i1112927:# #t1112927:#
+#i1112928:# #t1112928:#
+#i1112929:# #t1112929:#"/>
+    </imgdir>
+    <imgdir name="28271">
+        <string name="name" value="Picking Up the Trash"/>
+        <string name="0" value="#rFrosty#k would like some help pickup up trash. It&apos;s getting pretty hot for him..."/>
+        <string name="1" value="Frosty seems a little grumpy, I guess I would be too as a snowman in a big city. Especially cleaning up after people all day.\n\nFrosty asked that I pick up the trash from the #bBack Alley#k and bring it back to him. He said the entrance is by all the piled up trash next to the equipment shop."/>
+        <string name="2" value="I picked up the trash and brought it back to Frosty. He didn&apos;t seem very thankful..."/>
+        <int name="area" value="2"/>
+        <string name="demandSummary" value="#i4000366:# #t4000366:# #c4000366# / 75"/>
+        <string name="rewardSummary" value="EXP 3500\n
+#i2000001:# 30
+#i2002031:# 30
+"/>
+    </imgdir>
+    <imgdir name="28272">
+        <string name="name" value="Icarus&apos; Smelly Shoes"/>
+        <string name="0" value="#b#@1052106:##k in #b#m103000000##k has a simple favor to ask you."/>
+        <string name="1" value="He wants me to find his #rSmelly Gomushin#k that his mom threw away. He really liked those ones because unlike normal Gomushin, which made him feel fast, these ones made him feel like he could jump through the roof. It sounds like they are in the alley, (probably in one of the trash cans), waiting to be picked up with the rest of the trash. He said the entrance is by all the piled up trash next to the equipment shop."/>
+        <string name="2" value="As requested, you&apos;ve returned the #rSmelly Gomushin#k back to him. Maybe you found an extra pair for yourself?"/>
+        <int name="area" value="2"/>
+        <string name="demandSummary" value="#i1072043:# #t1072043:# #c1072043# / 1"/>
+        <string name="rewardSummary" value="EXP 3500\n
+#i2000001:# 30
+#i2002031:# 30
+"/>
+    </imgdir>
+    <imgdir name="1002">
+        <string name="name" value="Ancient Coins"/>
+        <string name="1" value="I found an #rAncient Coin#k(?) Rinne reached out to me and told me to come find her in #bKora City#k.\n\nShe said she&apos;s got goods to trade for them!"/>
+        <string name="2" value="#rRinne#k taught me all about the new scroll system!\n\n#eShe also noted that I should be actively spending coins to progress!#n"/>
+        <int name="area" value="0"/>
+        <string name="0" value="Find an #rAncient Coin#k and bring it to #bRinne#k in #bKora City#k."/>
+        <int name="autoStart" value="1"/>
+    </imgdir>
+    <imgdir name="1030">
+        <string name="name" value="Blackmarket Deal"/>
+        <string name="0" value=""/>
+        <string name="1" value=""/>
+        <string name="2" value="She wasn&apos;t very happy with me, but she still sold me that recipe..."/>
+        <int name="area" value="4"/>
+    </imgdir>
+    <imgdir name="1032">
+        <string name="name" value="Time Travel"/>
+        <string name="0" value="Find the &quot;white mage&quot;."/>
+        <string name="1" value="I found the &quot;white mage&quot;, it was #bGrendel#k, back in #bKora City#k. He gave me a #rpendant#k and mentioned it would allow me to travel through time while nearby the forge.\n\nHe asked that I gather 10 of each essence from #rAncient Golems#k. He noted I could find them where I first met #ricy#k and #rflaming#k golems."/>
+        <string name="2" value="I collected all the essence and #bGrendel#k was able to transmute the essence to solid materials. He passed out shortly after and when he awoke, he didn&apos;t remember anything.\n\nHe said maybe #bFrancois#k would know what do with the stones."/>
+        <int name="area" value="4"/>
+        <string name="parent" value="Restore the Forge"/>
+        <int name="order" value="2"/>
+        <string name="demandSummary" value="#i4034539:# #t4034539:# #c4034539:# / 10
+#i4034538:# #t4034538:# #c4034538:# / 10"/>
+        <string name="rewardSummary" value="#i4007028:# #t4007028:#
+#i4007029:# #t4007029:#"/>
+    </imgdir>
+    <imgdir name="1033">
+        <string name="name" value="Consult with Francois"/>
+        <string name="0" value="Speak with #bFrancois#k once more."/>
+        <string name="1" value="#bFrancois#k spent time looking through his book and may have an answer for me now."/>
+        <string name="2" value="All #bFrancois#k could find was &quot;...sacrifice the stones.&quot; That doesn&apos;t make sense, does it? He suggested I chat with #bMoki#k."/>
+        <int name="area" value="4"/>
+        <string name="parent" value="Restore the Forge"/>
+        <int name="order" value="3"/>
+    </imgdir>
+    <imgdir name="1034">
+        <string name="name" value="The Heart of the Forge"/>
+        <string name="0" value="Speak with #bMoki#k at the Forge."/>
+        <string name="1" value="#bMoki#k thought I would have the heart already. He was disheartened to learn that a &quot;sacrifice&quot; has to take place. I assured him it was for the stones...\n\nHe didn&apos;t know of any such rituals, but that doesn&apos;t mean they don&apos;t exist. He said we should look in and around the forge for anywhere that looks like a &quot;sacrifice&quot;.\n\nOnce we solve the puzzle, I&apos;ll need to craft the #rHeart of The Forge#k and give it to #bMoki#k."/>
+        <string name="2" value="I solved the riddles of the land, learned the ways of the forge and restored returned the #bManaforge#k to it&apos;s former glory. I conquered Zone 4!"/>
+        <int name="area" value="4"/>
+        <string name="parent" value="Restore the Forge"/>
+        <int name="order" value="4"/>
+        <string name="demandSummary" value="\n#i4007030:# #t4007030:# #c4007030:# / 1"/>
+        <string name="rewardSummary" value="EXP 150000
+#e#bZone 4 Completion#k#n\n
+#i1142205:# #t1142205:#"/>
+        <string name="summary" value="Find out what to do with the #rstones#k, craft the #rheart#k, return to #bMoki#k."/>
+        <string name="type" value="[Craft]"/>
+    </imgdir>
+</imgdir>

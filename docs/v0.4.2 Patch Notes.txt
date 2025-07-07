@@ -1,0 +1,6 @@
+v0.4.2 Patch Notes
+- Fixed Sen not working
+- Fixed News stand not working
+- Fixed magic claw crashing
+- Roly Polys not working
+- Fixed KOC Creation being available

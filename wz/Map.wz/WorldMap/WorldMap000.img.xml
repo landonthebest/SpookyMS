@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="WorldMap000.img">
+    <imgdir name="info">
+        <string name="parentMap" value="WorldMap" />
+    </imgdir>
+    <imgdir name="BaseImg">
+        <canvas name="0" width="640" height="452">
+            <vector name="origin" x="320" y="226" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="MapList">
+        <imgdir name="0">
+            <vector name="spot" x="-18" y="-5" />
+            <int name="type" value="0" />
+            <imgdir name="mapNo">
+                <int name="0" value="100000203" />
+                <int name="1" value="200000301" />
+                <int name="2" value="910000002" />
+                <int name="3" value="100000001" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <vector name="spot" x="75" y="72" />
+            <int name="type" value="0" />
+            <imgdir name="mapNo">
+                <int name="0" value="910000000" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="2">
+            <vector name="spot" x="-127" y="-84" />
+            <int name="type" value="0" />
+            <imgdir name="mapNo">
+                <int name="0" value="30000" />
+                <int name="1" value="30001" />
+            </imgdir>
+        </imgdir>
+        <imgdir name="3">
+            <imgdir name="mapNo">
+                <int name="0" value="910000001" />
+            </imgdir>
+            <vector name="spot" x="-61" y="-24" />
+            <int name="type" value="1" />
+        </imgdir>
+        <imgdir name="4">
+            <imgdir name="mapNo">
+                <int name="0" value="104040000" />
+                <int name="1" value="1010200" />
+                <int name="2" value="1010201" />
+                <int name="3" value="1010202" />
+                <int name="4" value="1010203" />
+                <int name="5" value="1010204" />
+            </imgdir>
+            <vector name="spot" x="-74" y="12" />
+            <int name="type" value="1" />
+        </imgdir>
+    </imgdir>
+</imgdir>

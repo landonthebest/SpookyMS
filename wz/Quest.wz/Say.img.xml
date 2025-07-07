@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="Say.img">
+    <imgdir name="1000">
+        <imgdir name="1">
+        </imgdir>
+        <imgdir name="0">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1001">
+        <imgdir name="0">
+            <string name="0" value="It looks like you&apos;ve collected all components to the #rBlack Key#k...\n\nI can forge it for you and in return this will give me the practice I need to prove to my forgemaster that I&apos;m ready for my own forge..."/>
+            <string name="1" value="In order to do so, I&apos;ll need a handful of resources;\n\n- #r10 Firewood#k to house the fire\n- #r10 Slate#k to forge the mold for the key\n- #r4 Leathers#k to craft gloves that can withstand the heat\n\nLastly, we&apos;ll need something hot, really hot. The #rFlaming Feather#k should do it. You can get one from the #rFire Boars#k in the #bScorching Valley#k."/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let&apos;s see, were you able to collect everything on the list?"/>
+            <imgdir name="yes">
+                <string name="0" value="Ahhhhh, yes! This should do it and my master will be most pleased...Let me stoke the fire and smash the hammer...\n\n(Eleska lights the logs with the flaming feather and before you know it, the #rBlack Key#k is ready)\n\nHere ya are, it&apos;s quite cool to touch actually, don&apos;t be afraid."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="This won&apos;t do, we&apos;ll need everything on the list to forge the key..."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1003">
+        <imgdir name="0">
+            <string name="0" value="Oh, a traveller!! Look at my brother, he&apos;s dying, not really, but you wouldn&apos;t know any better would you? I mean, my god, look at this guy."/>
+            <string name="1" value="He&apos;s throwing a fit, dying if you will, because a monster ran off with this water. Could you hunt down the #rnearby monsters#k and find which one took his #rwater#k?\n\nWe&apos;ve been following this #rmap#k for days and can&apos;t figure it out. We checked the mountain but didn&apos;t see a way up, maybe you can find it. It&apos;s yours in return for the #rwater#k..."/>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I&apos;ve got the map still, it&apos;s your&apos;s if you help my brother... For both our sakes..."/>
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Good lord, quick, we gotta give it to him before he melts into a puddle. He won&apos;t, but he thinks so...\n\nHere&apos;s the #rmap#k in return. Good luck figuring it out, we could not..."/>
+            </imgdir>
+            <string name="0" value="Did you got the got dayum water? This guy&apos;s losin it!"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1004">
+        <imgdir name="0">
+            <string name="0" value="Alright, now listen up!\n\nWhere I come from, there was order! Men did this and women did that and there was no crossing the lines! As such, I chose to inspect rocks, because well, boys like rocks right?\n\nDon&apos;t get me wrong, I like rocks... However, can&apos;t a man love fashion as well? I mean look at my hat, GORGEOUS! Oh boy, I do love hats as well..."/>
+            <string name="1" value="As a matter of fact, don&apos;t tell my family, but I came here to collect HATS! Not fossils!\n\nI&apos;m afraid I&apos;ve wasted too much time hiding my real joy and I&apos;m not quite strong enough to collect them in this region. Would you help out?\n\nI need each one of the #rbamboo#k hats to complete my collection..."/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ooooooooweeeeeeeee, these are so cute!\n\nI knew I spotted another #rfashionista#k in the wild. As a token of my appreciation, here is my prized #rFashionista #2#k!\n\nNow, run off and don&apos;t tell anyone we had this conversation..."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1005">
+        <imgdir name="0">
+            <string name="0" value="It&apos;s you! I&apos;ve been waiting for you to make your way here...\n\nWe&apos;ve been trying to access the vault for quite some time. It is believed that the statues hold the key to access, but no one has been able to solve them. Can you solve the riddles?"/>
+            <string name="1" value="I see some items in your inventory there that should help;\n\n#rThe Clue#k and #rThe Map#k\n\nNo ones sure about the third statue though..."/>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Doesn&apos;t look like you&apos;ve collected the #rBlack Vault Key#k yet...\n\nTake a look at your riddle and listen to what the statues have to say..."/>
+                </imgdir>
+            </imgdir>
+            <string name="0" value="Do you have it?!?"/>
+            <imgdir name="yes">
+                <string name="0" value="We mustn&apos;t waste any time!\n\nQuick, use the key to access #bThe Vault#k!"/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1006">
+        <imgdir name="0">
+            <string name="0" value="Come find me...\n\nI suppose if you are able to hunt me down, you should be capable of hunting down the things I need.\n\nI&apos;m somewhere in #bKora City#k..."/>
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1007">
+        <imgdir name="0">
+            <string name="0" value="That looks yummy... I demand you bring that here at once!"/>
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1009">
+        <imgdir name="0">
+            <string name="0" value="That looks yummy... I demand you bring that here at once!"/>
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1010">
+        <imgdir name="0">
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1011">
+        <imgdir name="0">
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1012">
+        <imgdir name="1">
+            <string name="0" value="Let&apos;s see, did you get all the materials? That was pretty quick if so."/>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Doesn&apos;t look like you have everything yet. Get back out there and find those materials!"/>
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Amazing! These will help me progress!\n\nAs promised, let me teach ya a thing or two about crafting:\n\n#eNew Skill:#n #rForge Lvl. 1#k\n\nDon&apos;t let me forget, here&apos;s your #rguide book#k!\n\n#eAs you get stronger you will unlock new recipes, so check your recipes often.#n\n\nAdditionally, some of the inhabitants of this zone might have additional &quot;#rhidden#k&quot; recipes if you ask around and pay attention!"/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="Oh! It&apos;s you again!\n\nYou cleared the vault, huh? You may just have what it takes to be a forge master after all.\n\nYeah, I think I see it, you could be one if you really practice."/>
+            <string name="1" value="If you can gather up some rare materials for me. I can teach you some basic crafting skills. I&apos;ll need the following items to make it happen:\n\n#e1.#n #rMaple Leaf#k\n#e2.#n #rMoon Rock#k\n#e3.#n #rStar Rock#k\n\nThese items can be tough to get, but if you are capable, you should be able to do it..."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1013">
+        <imgdir name="0">
+            <string name="0" value="Oh, thank you! It&apos;s the hero of the #bThe Vault#k! I need someone like you. Do you see all this walking stone? It seems that the life of #bThe Forge#k is being drained by these stone creatures. They walk aimlessly, fighting anything that gets nearby.\n\nOne of my informants let me know that the Fairies needed help out here, so I came as fast as I could. Could you help us fight back?\n\nThere are so many..."/>
+            <string name="1" value="Before I left the forest, we had a #rweird stone#k fall from the sky. It&apos;s your&apos;s if you help us fight back the automatons."/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did we push them back? Are the automatons still in control?"/>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Doesn&apos;t look like we&apos;ve pushed the automatons back far enough yet, they are running rampant...\n\nPlease help us."/>
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Thank you so much, #h #!\n\nThe fairies are forever grateful. Here is that #rstone#k I talked about. It has an odd glow inside of it. Maybe it&apos;s useful to you?"/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1014">
+        <imgdir name="0">
+            <string name="0" value="&quot;Get out of my way!&quot; &quot;No, you get out of the way.&quot;\n\n(small scuffle ensues and the ladies gather their composure)\n\n&quot;Hey!&quot; They both said at the same time.\n\nRobin: We need some new gear, well, me really, I need it badly.\n\nCorine: No she doesn&apos;t... Look at my cute tiger, I need to get him food and I can&apos;t afford both food and gear...\n\nRobin: Always, on and on with the &quot;cute little tiger&quot;... She&apos;s doing just fine, she comes from wealth. I been working hard to get where I am, but who doesn&apos;t need a little help every once in a while? Plus, I think you&apos;re pretty cute myself...\n\nCorine: Hun, pretend she&apos;s not here. She make&apos;s up stuff all the time. Can a girl get some luv?\n\n(I&apos;ll have to choose one I guess...)"/>
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1015">
+        <imgdir name="0">
+            <string name="0" value="Uhhhh, hi... I&apos;m a bit-t-tt-t sc-sc-scared up here...\n\nI was inspecting the ruins and th-th-th-then this stone came to life and started attacking me... I climbed as fast as I c-c-c-co-could. I&apos;m not coming back down without some help...\n\nCould you find a way for me to get back to camp?"/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="I&apos;m n-n-n-ot so sure about this... There are so many of them..."/>
+            <string name="1" value="Did you find a way for me to get back to c-ca-c-camp?\n\n(Yeah sure, you are gonna have to #rfly#k!)\n\nAbsolutely not.\n\n(I promise, the fairy wings are some of the strongest flight materials available, I&apos;ll be right by your side)\n\nO-o-ok-kay... Here goes nothing I guess..."/>
+            <imgdir name="yes">
+                <string name="0" value="(I assure her that the wings are very strong and imbued with magical properties to keep her afloat)\n\nO-k-k-kay, if you s-s-s-sa-say so...\n\n(Della takes the #rFairy Wing Cape#k and flys back to camp)"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="N-n-n-no not yet, I guess..."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1016">
+        <imgdir name="0">
+            <string name="0" value="#eCome see me at camp#n and I&apos;ll make a trade with you!I want that #rGold Ore#k!\n\nI can move that pretty well through #bBlack Market#k. Have you been there? I don&apos;t suppose so, you don&apos;t look very wealthy...\n\nHere&apos;s a deal, I&apos;ve got this old #rtreasure map#k. I&apos;ve gone looking for the #rtreasure#k a few times now, but I haven&apos;t the time anymore and I just can&apos;t find it. I&apos;ll give it to you for a couple #rgold ore#k? I can at least recuperate my costs that way."/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ah, there you are. Yeah, like I said, I&apos;m just too busy to solve this puzzle. I&apos;ve been collecting so much stuff, and so many people want to buy from me. I can&apos;t be arsed anymore. You look like a bright cookie, why don&apos;t you solve it? I&apos;m sure there is a good reward for it."/>
+            <imgdir name="yes">
+                <string name="0" value="Great! Here&apos;s the #rmap#k, and I&apos;ll take those #rgold ore#k. Good luck out there!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don&apos;t seem to have the ore anymore? What happened? I&apos;ll give you the #rmap#k for two #rgold ore#k..."/>
+                </imgdir>
+            </imgdir>
+            <imgdir name="lost">
+                <string name="0" value="What? You lost the map? Here it is again... Don&apos;t ask why I have copies."/>
+                <imgdir name="yes">
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1017">
+        <imgdir name="1">
+        </imgdir>
+        <imgdir name="0">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1018">
+        <imgdir name="0">
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1019">
+        <imgdir name="0">
+            <string name="0" value="Hello friend.\n\nI am Scon.\n\nI am your friend.\n\n(why is he talking like this? &quot;Hey Scon, I&apos;m #h #&quot;)\n\nOh? You speak the same language as me? Haha, that&apos;s great! I wasn&apos;t sure since I&apos;m not from around here. This will make negotiations easy then."/>
+            <imgdir name="yes">
+                <string name="0" value="Alright, come chat when you have the &quot;bads&quot;. Ha, see what I did there?"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well, that&apos;s fine. I&apos;ll keep it to myself then."/>
+            </imgdir>
+            <string name="1" value="You see, where I&apos;m from. You get stronger by having bad gear, and I mean really bad. Doesn&apos;t make sense, right?\n\nIt used to be the same as here, but everyone got so strong, the Maple gods, flipped the tables on us and started rewarding casual players. Who knew?\n\nSo now, I&apos;ve come here. To an earlier time where the gear ain&apos;t so great, ya know?\n\n(that one stings a little, but okay)\n\nCould you find me some of the worst possible gear? I mean #rterrible#k gear. These items should roll with #r0 main stats#k on them... I need #eone#n of the following items:\n\n#e1.#n #rBronze Ring#k\n#e2.#n #rWhite Gomushin#k\n#e3.#n #rWork Gloves#k\n\nCould you find one for me? I&apos;ve got goodies to trade for in-return."/>
+            <imgdir name="stop">
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1020">
+        <imgdir name="0">
+            <string name="0" value="Ah, shit. My leg is killing me and my potions aren&apos;t helping. I&apos;ve been drinking them like crazy.\n\n(obviously, he is covered in potion substance and there are bottles everywhere)\n\nI need something stronger to get out of here. Could you help me out?"/>
+            <imgdir name="yes">
+                <string name="0" value="Check with the people at #bcamp#k. One of them might have a #rrecipe#k to get me back on my feet."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Eh? Really, just gonna leave me here to die?"/>
+            </imgdir>
+            <imgdir name="stop">
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Do you have something to help?"/>
+            <imgdir name="yes">
+                <string name="0" value="That&apos;s gotta be strong enough to heal me up. Quick, hand it over."/>
+                <string name="1" value="#bFeylorn#k springs to his feet in an instant.\n\nJust like those #e&quot;beans&quot;#n from Scon&apos;s world.. Ha! And I feel stronger than ever before? Maybe I&apos;m like his people?"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Oh god, I&apos;m done for aren&apos;t I? Please don&apos;t let me die like this."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1021">
+        <imgdir name="0">
+            <string name="0" value="Hey, #h #!\n\nI heard about you from #bDoofus#k. He said you been helping out around #bKora#k quite a bit. I thought I might see you some time.\n\nI&apos;m the local #rPet Master#k. Really, I just help young explorers like yourself learn to raise their pets and teach them new skills.\n\nWould you like to learn a new skill today? First one ain&apos;t too bad, talk to #bUtah#k and come back with a #rgolden egg#k!"/>
+            <string name="1" value="Why don&apos;t you chat with #bUtah#k and see if he can help."/>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="He seems like he hasn&apos;t finished his chores yet... Could you chat with him?"/>
+                </imgdir>
+            </imgdir>
+            <string name="0" value="Did you check in with #bUtah#k?"/>
+            <imgdir name="yes">
+                <string name="0" value="Oh, you have the #rgolden egg#k? How did you get that? That was supposed to be #bUtah&apos;s#k job this morning... Ah well, if you are quick enough to get the egg, then your pet should be able to keep up, right?\n\nLet me teach you a new skill:\n\n#eNew Skill:#n #rFast Pet#k\n\nThat should help you out quite a bit. I know we get quite speed around here, and this will allow your pets to keep up with you! Isn&apos;t that great?"/>
+                <string name="1" value="Maybe when you are stronger even yet, I&apos;ll have some additional goodies for you? Who knows! Get out there, train and raise those pets.\n\nI gotta talk to my nephew about this &quot;egg&quot; business."/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1022">
+        <imgdir name="1">
+            <string name="0" value="Well, what do you have? Were you able to get the samples?"/>
+            <imgdir name="yes">
+                <string name="0" value="There they are. Thank you. The #bmages guild#k doesn&apos;t need to know I didn&apos;t do the work and you can save #bFeylorn#k. Thank you!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don&apos;t have the samples yet. I&apos;ll need those before we can stike a deal."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="You need help from me? No, no, no, no... I need help from #eYOU#n."/>
+            <string name="1" value="When I joined the #bmages guild#k, I thought I would be studying. An academic, ya know? Once I got in, they started talking about &quot;best farmers&quot;, &quot;full map aoe&quot;, &quot;minimal movement&quot;. Then they sent me off on my own to gather these samples. I don&apos;t want to battle monsters, I want to study!\n\nThat&apos;s where you come in. There are monsters, within the ruins. I need a couple samples from them. Could you help with those?\n\nI&apos;ll need one #rlarge sample#k and one #rsmall sample#k. Should be the #rGuardian#k and #rSentinel#k monsters that drop them.\n\nReport back once you have those."/>
+            <string name="2" value="I can give you a #rrare ticket#k (chair or gachapon, your choice) in return.\n\n(What about a recipe for a #rpowerful potion#k, have any of those?)\n\n Oh, we have lots of recipes where I come from. Sure I&apos;ll throw one of those in there as well!"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1023">
+        <imgdir name="1">
+            <string name="0" value="Did you get all the materials? I&apos;m running out of time over here..."/>
+            <imgdir name="yes">
+                <string name="0" value="Oh you have them, thank you so much. This will allow me to correct the orders.\n\nYou know what, I don&apos;t actually need this #rSteel Ore#k, I found some in the tent. Seems like it could be useful to you though..."/>
+                <string name="1" value="#eOh my, did you hear that?#n That was so loud, sounds like something changed in the ruins. You better go check it out."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Looks like you don&apos;t have all the materials yet. Please collect them all!"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="I messed up, #h #.\n\nI was a swingin and a swangin my hammer, pumpin out orders like it was no-ones business.\n\nThen when I finished? I realized I built the wrong items...\n\nI need more crafting materials pronto."/>
+            <imgdir name="yes">
+                <string name="0" value="Amazing, get out there and get those materials, the people are waiting!"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Seriously??? I really need your help..."/>
+            </imgdir>
+            <string name="1" value="I&apos;ve got an old recipe, from a book written long ago. It&apos;s yours in return for the materials. What do you say?"/>
+            <imgdir name="stop">
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1024">
+        <imgdir name="1">
+            <string name="0" value="Quick, over here, I need help!"/>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="Hey, #h #! Welcome to #bManaforge#k. Your at the base camp right now, just outside the ruins.\n\nI lead the excavation team here. Our goal is to learn all of the Forge&apos;s secrets, particularly, what is wrong with it...\n\nYou heard that right, something&apos;s wrong. The forge seems to be dying and the automatons protecting it are overwhelming the lands.\n\n#eWe&apos;ll need you to help us save the forge...#n\n\nYou can start by helping one of our own as #bShawn#k just got back from an excursion and let me know that #bFeylorn#k is hurt in the ruins. He was our fighter before, but I guess that is going to have to be you now!\n\nWhen you are ready, the ruins will accept you and allow you to enter, hurry and help #bFeylorn#k!"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1025">
+        <imgdir name="1">
+            <string name="0" value="Has the #bQueen&apos;s#k newest disciple finished her request yet?"/>
+            <imgdir name="yes">
+                <string name="0" value="Why yes, yes &quot;I&quot; have in fact. Thank you for handing these over. I&apos;ll be sure to let the #bQueen#k know of your work."/>
+                <string name="1" value="Oh! You wanted something in return? Fine, take this #rFashionista Card#k. You&apos;ll need it..."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Not enough! The #bQueen#k expects better of her disciples!"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="I, sir Roger. Hereby declare, that I need your help. The real #bQueen#k has sent me on a mission of utmost importance and it is up to me (you) to gather the supplies."/>
+            <string name="1" value="(you can&apos;t help but ask about his skin)\n\nMy skin, you say? No, I&apos;m not a ghost. This is a beautiful skin color given to me by the #bQueen#k herself. You could only be so lucky to don it.\n\nHold on, back to the matter at hand. The #bQueen#k demands #rcrystalized eyes#k for her powders and tinctures. Collect them and report to me at once!"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1031">
+        <imgdir name="0">
+            <string name="0" value="#h #, as you can see, the forge is dying. I&apos;ve been here, trying to keep it going, but there&apos;s almost nothing left to it. It&apos;s heart is black as night.\n\nMaybe, if we work together, we can restore it? I was not able to alone."/>
+            <imgdir name="yes">
+                <string name="0" value="You should start with #bFrancois#k, he is from the #bmages guild#k and they have texts that go back eons. He may know something."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I suppose the forge doesn&apos;t have to live on. You&apos;ll just stay weak forever, pleb."/>
+            </imgdir>
+            <imgdir name="stop">
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Huh? The forge is dying? How can I help?\n\n(Moki thought there might be something in those books of yours that talks about powering the forge?)\n\n(Francois pulls out a very, very old book and begins flipping through the pages gently as to not ruin the book)\n\nHmm... I see here it talks of &quot;restoring the forge&quot; but much of it is too worn to read. Towards the end I see something about a &quot;#rwhite mage#k&quot;. Does that make any sense to you?"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1027">
+        <imgdir name="1">
+        </imgdir>
+        <imgdir name="0">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1028">
+        <imgdir name="0">
+            <string name="0" value="Oh great, you were able to locate #bFeylorn#k. Were you able to help him out yet?"/>
+            <string name="1" value=" I hope he is going to be okay...\n\nYou&apos;ll also need to figure out how to get to the Forge. #bMoki#k is waiting for you. He needs help to save the heart."/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="My friend, come closer. We haven&apos;t much time..."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1030">
+        <imgdir name="1">
+        </imgdir>
+        <imgdir name="0">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1032">
+        <imgdir name="0">
+            <string name="0" value="Oh, hello traveler! What&apos;s that? The Forge? What is that?\n\n(Grendel fits the description of a &quot;white mage&quot;, but he doesn&apos;t seem to know anything about it. &quot;Grendel, I need you to think clearly about the forge, do you remember it?)\n\nI&apos;m sorry young traveler, I don&apos;t know of a forge. (&quot;Grendel, please, the #bManaforge#k is dying.)\n\n(his eyes grow wide, almost like a long lost memory has come back.)"/>
+            <string name="1" value="Now that&apos;s a term I haven&apos;t heard in quite some time. I&apos;ve been around for ages ya know? You found your way to the #bManaforge#k?\n\n(Yes, and it&apos;s dying, I need your help. We need to craft &quot;The Heart of the Forge&quot;, but we don&apos;t know how, do you know anything?)\n\nDo I know anything? I wrote the recipe young lad... To get started, we&apos;ll need the essence of #rAncient Fire Golem#k and #rAncient Ice Golem#k."/>
+            <string name="2" value="(Hmm, I&apos;ve not seen those monsters yet.)\n\nWell, I&apos;m not surprised, they don&apos;t exist anymore! We&apos;ll have to go back in time. You are going to need this pendant.\n\n(Grendel pulls out a light blue pendant with a swirling mass on the inside.)\n\nWhile wearing this, you will be able to travel back to when the #bManaforge#k was thriving. There you will fight the monsters you seek and be able to get the necessary crafting materials to restore the forge.\n\n(How does it work?)\n\nRevisit the ruins where you first met #rIce#k and #rFire#k golems. The pendant will take care of the rest. Once you have collected the #ressence#k, bring them back to me."/>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="This isn&apos;t enough, we&apos;ll need all 20 (10 of each) to harness enough power to stabilize the essence."/>
+                </imgdir>
+            </imgdir>
+            <string name="0" value="Did you collect them all? I should be able to harness the essence to form solid materials."/>
+            <imgdir name="yes">
+                <string name="0" value="There that should do it. Now just let me...\n\n(Grendel is really struggling with this task.)\n\nWhat&apos;s that young lad? You don&apos;t think I got what it takes anymore!\n\n(Grendel seemingly powers up and in a flash of light, two stones are formed and floating above each of his hands.)\n\nSee? I still got it. The #bManaforge#k won&apos;t die on my watch."/>
+                <string name="1" value="(Grendel falls to the ground and the stones fall as well. Grendel!)\n\n(He wakes up but doesn&apos;t seem to remember what happened. I try talking to him about the #bManaforge#k again, but he doesn&apos;t recall. When I asked him about the stones, he said to talk to his apprentice, #rFrancois#k.)"/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1033">
+        <imgdir name="0">
+            <string name="0" value="Grendel passed out? Is he okay?\n\n(Yes, he is fine, but he doesn&apos;t have any recollection of the events that transpired. He told me to come talk to you and that you may know what to do with the stones.)\n\n(Francois, begins looking through that same book again.)"/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="There is barely any text left here, it reads &quot;...sacrifice the stones.&quot;\n\n(Sacrifice? I thought we need them for the #rHeart#k?)\n\nI can&apos;t help you there, I can only read what&apos;s written in the book. Maybe #bMoki#k knows something?"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1034">
+        <imgdir name="0">
+            <string name="0" value="Hey! Do you have the heart yet?\n\n(No, not yet, but I am getting close. I collected these stones and #rFrancois#k said all he could find in his books was the word &quot;sacrifice&quot;. Do you know anything about that?)\n\n&quot;Sacrifice&quot;? No, I don&apos;t know anything about that. Maybe it&apos;s best we do a sweep in and around the ruins?"/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Do you have the heart? I can take it from there."/>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don&apos;t have the heart yet, we don&apos;t have much time left."/>
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value=" The heart! You have it. Let me see it, quick!\n\n(#bMoki#k holds it against the black heart, pulls back his arm, hammer in hand and gently taps the heart with his eyes closed. He and the heart begin to glow. Nothing happens, but then... you hear a feint noise...)\n\n(It starts slow and quiet................ thump............... thump........... thump...... thump.. thump)\n\n(It builds up and the room begins to swirl! The heart breaks free from it&apos;s black casing. The glass shards shatter all around you. As you open your eyes, you are greeted with a beautiful blue shine. The heart lives on and the #Manaforge#k lives once more!!!)"/>
+                <string name="1" value=" You did it! You solved the mysteries of the ruins and these lands. You crafted the #rHeart of the Forge#k, proved your worth as an aspiring forge master and conquered #bZone 4#k!"/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1035">
+        <imgdir name="0">
+            <string name="0" value="Oh, a new traveler! Hey there, my name is Todd. This is where I teach new travelers like you #bhow to hunt monsters#k. You won&apos;t find monsters in Mushroom Town, but if you venture a little bit outside, those places are in fact full of them. It&apos;ll be quite dangerous for you to go there, if you aren&apos;t well-prepared for it."/>
+            <string name="1" value="Let&apos;s first discuss the #bbasic attack#k. You can do that by pressing the #bCtrl key#k. Approach the monster, but not too close that you&apos;ll touch it, then attack with authority. Got it? Do you want to try it right now?"/>
+            <imgdir name="yes">
+                <string name="0" value="You see the #rJr. Sentinel#k there? Try attacking it. Normally it&apos;s a powerful monster, but Grendel the Really Old, the head of all magicians, put a seal on it just for beginners like you, so you&apos;ll have no trouble practicing your swings against it."/>
+                <string name="1" value="Once you successfully hunt the Jr. Sentinel, you&apos;ll earn Jr. Sentinel Shellpiece as a dropping. To pick up an item, press #bZ#k on top of the item, so try picking up #bJr. Sentinel Shellpiece#k and give it to #bPeter#k. He&apos;ll teach you how to use skills to attack monsters."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Hmmm... are you afraid to go up against a monster? Don&apos;t worry about it. Practice makes perfect, and you&apos;ll be good at it in no time."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Seeing you with Jr. Sentinel Shellpiece, I see that Todd has taught you well on hunting. That means you&apos;re fairly aware of the basics of hunting... now I&apos;ll teach you how to #buse skills#k."/>
+            <imgdir name="yes">
+                <string name="0" value="Skills can be checked out by pressing #bK#k to open the skill window. Unlike regular attacks, skills can only be used by raising the skill level using Skill Points. You can earn Skill Points by leveling up, but you need to be careful when assigning those points to different skills."/>
+                <string name="1" value="The effectiveness of the skills differ greatly, based on the level. For example, the Three Snail Skill will require a regular Snail shell on Level 1, but on Level 2, you&apos;ll need Blue Snail shells. You&apos;ll have to really think and calculate which skills will maximize your hunting abilities."/>
+                <string name="2" value="To use a skill, it&apos;ll be much easier for you if you assign the skills on the #bQuick Slot#k at the bottom right of the screen. Just drag the skill icon on the skill window to one of the slots, and you&apos;re set to go. It&apos;ll be easier for you to just attack regularly at this point, but once you make the job advancement and earn more sophisticated skills, those skills will help you tremendously with everything."/>
+                <string name="3" value="This covers everything on skills. As a gift, I have just given you an item you can wear on your head, so use it wisely. Go to your item inventory and #bdouble-click on the item#k to equip it immediately. To #bmake sure you&apos;re equipped with it,#k press #bE#k. Happy traveling!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hmmm... It looks like Todd taught you how to hunt, but you haven&apos;t really put that to practice. Either that, or you forgot to pick up the dropping. Press #bCtrl#k to attack #rJr. Sentinel#k, and pick up #bJr. Sentinel Shellpiece#k."/>
+                </imgdir>
+                <imgdir name="npc">
+                    <string name="0" value="Eh? You haven&apos;t gone to see #bPeter#k yet? Don&apos;t be shy. Just hunt the #rJr. Sentinel#k, pick up #bJr. Sentinel&apos;s Shellpiece#k, and give it to him. He&apos;ll be more than happy to teach you how to use skills."/>
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="Hmmm... It looks like Todd taught you how to hunt, but you haven&apos;t really put that to practice. Either that, or you forgot to pick up the dropping. Press #bCtrl#k to attack #rJr. Sentinel#k, and pick up #bJr. Sentinel Shellpiece#k."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1036">
+        <imgdir name="0">
+            <string name="0" value="Oh... A new traveler! Since you&apos;re at Level 2, you should have some #bAP#k with you. Did you #bdistribute the AP#k? If you are unfamiliar with AP, then allow me to teach you a thing or two. I will give you a #bquiz#k that will help you understand the concept behind stats, AP, and ultimately, job advancement."/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Now, click on me once more to ask some questions that you would like to be answered. I will explain it to you in great detail, one by one. Once you feel like you have this figured out, click on the #bRobin the Walking Encyclopedia#k quest to start the quiz."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh ho... You must be confident that you can answer everything! It&apos;s never a bad idea to test your knowledge every once in a while."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You must be ready for the quiz. Okay, let&apos;s start with this. First question! Whenever you level up, you will acquire some #bAbility Points, AP for short#k, and you will use that to raise your #bSTR, INT, DEX, and LUK#k. The question is, is it possible to raise #bHP and MP#k using  your AP as a #rBeginner#k?  \r\n#b#L0# Yes, it&apos;s possible. #l\r\n#L1# No, it&apos;s not possible. #l"/>
+            <string name="1" value="That is correct! You can only start raising your HP and MP using your AP after making the first job advancement. You can&apos;t do that right now. Next question! You may be a beginner right now, but after you reach a certain level, you can make a job advancement. #bNormally, you&apos;ll have to be at Level 10 to make the job advancement,#k but #byou can make a job advancement at Level 8 with this job#k. What would that be?\r\n#b#L0# Warrior #l\r\n#L1# Magician #l \r\n#b#L2# Bowman #l \r\n#b#L3# Thief #l \r\n#b#L4# Pirate#l"/>
+            <string name="2" value="That is correct! Only the Magicians can make the job advancement at Level 8. Last question! Here&apos;s a list of jobs and the places you need to visit to make the job advancement. #bWhich of these do not match?#k\r\n#b#L0# Warrior  -  Perion #l\r\n#L1# Magician  -  Ellinia #l \r\n#b#L2# Bowman  -  Henesys \r\n#b#L3# Thief  -  Nautilus"/>
+            <string name="3" value="That is correct! #bThieves can make the job advancement at Kerning City#k! As for The Nautilus, #bPirates can make the job advancement there#k! Bravo! You seem to know a great deal about the AP, stats, and job advancements! I think you should have no trouble picking out a job for yourself when the time comes."/>
+            <int name="ask" value="1"/>
+            <imgdir name="yes">
+                <string name="0" value="I highly advise you to plan ahead and think of what job you&apos;d like to take up on while you&apos;re in the beginner stage, or even before that. Just know that when you make your job advancement, your AP will be realigned to fit your new job, so you won&apos;t need to worry about that. I do think it&apos;ll be much better off if you plan ahead and figure out what you want to become before making the job advancement."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="2"/>
+                    <string name="0" value="Incorrect! You can only start increasing your HP and MP by using your AP AFTER making the job advancement. Start over!"/>
+                </imgdir>
+                <imgdir name="1">
+                    <int name="answer" value="2"/>
+                    <string name="0" value="Incorrect! Only the Magicians can make the job advancement at Level 8. That&apos;s because the users that have raised INT to become a Magician will have a rough time leveling up in the beginning. Start over!"/>
+                    <string name="2" value="Incorrect! Only the Magicians can make the job advancement at Level 8. That&apos;s because the users that have raised INT to become a Magician will have a rough time leveling up in the beginning. Start over!"/>
+                    <string name="3" value="Incorrect! Only the Magicians can make the job advancement at Level 8. That&apos;s because the users that have raised INT to become a Magician will have a rough time leveling up in the beginning. Start over!"/>
+                    <string name="4" value="Incorrect! Only the Magicians can make the job advancement at Level 8. That&apos;s because the users that have raised INT to become a Magician will have a rough time leveling up in the beginning. Start over!"/>
+                </imgdir>
+                <imgdir name="2">
+                    <int name="answer" value="4"/>
+                    <string name="0" value="Incorrect! Perion&apos;s for warriors, Ellinia&apos;s for magicians, and Henesys is for bowmen, but for the thieves, you need to go to Kerning City! Start over!"/>
+                    <string name="1" value="Incorrect! Perion&apos;s for warriors, Ellinia&apos;s for magicians, and Henesys is for bowmen, but for the thieves, you need to go to Kerning City! Start over!"/>
+                    <string name="2" value="Incorrect! Perion&apos;s for warriors, Ellinia&apos;s for magicians, and Henesys is for bowmen, but for the thieves, you need to go to Kerning City! Start over!"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1037">
+        <imgdir name="0">
+            <string name="0" value="Welcome, #h #, to AdventureMS! You can treat #bZone 1#k like a tutorial. You&apos;ll have to pay attention to what NPC&apos;s are saying, your quest log and the general environment.\n\nYou&apos;ll get special quest items with clues to locations. If you feel lost, take time to think about where you last left off and what you should be working toward! In this zone, you&apos;ll get a couple different types of quests that give you an extremely brief glimpse into what AdventureMS is about!\n\nNow, we&apos;ll start your first quest:\n\nI&apos;m Sam, the town ranger. I&apos;m in charge of keeping this town clean.\n\nThere&apos;s a #rboss snail#k running things round here, makin me look bad, we gotta find em. If you take care of some #rsnails#k, I could give you my #rkey#k to the town #bGarden#k. He was last spotted somewhere in the #bGarden#k.\n\nThe leaders of this town are offering a pretty good reward for taking the boss down. What do you think?"/>
+            <imgdir name="yes">
+                <string name="0" value="Alright, let&apos;s get started! Go ahead and take out #r30 snails#k and report back to me!"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Sometimes, you have to accept quests to progress through the zones, this is one of those times..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Hmmm... Not sure if I should trust you yet. Please hunt #r30 snails#k first then talk to me."/>
+                </imgdir>
+            </imgdir>
+            <string name="0" value="Let&apos;s see, did you take out enough #rsnails#k?"/>
+            <imgdir name="yes">
+                <string name="0" value="Great job, #h #! You&apos;ve completed your first quest in AdventureMS!\n\nYou will now receive a few rewards, one of which are keys. They will go in your #b#eSetup#k#n tab. Items in your #b#eSetup#k#n tab, should #r#eNEVER BE SOLD, DROPPED OR TRADED#k#n (unless they explicitly say to do so)! Doing so, will more than likely block your progress.\n\nThese #rkeys#k for example, will give you a clue to find the next map! Let&apos;s close out this quest!\n\nThanks for cleaning up those snails. That #rkey#k should help you find the one in charge of all these snails... I haven&apos;t been able to find him. The town would really appreciate it if you get to the bottom of it.\n\nGained: #i3991000:# #t3991000:#"/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2000">
+        <imgdir name="0">
+            <string name="0" value="I think the townspeople would calm down a little if we could return their equipment. Can you get me #b#e1#n #b#t1082002##k, #b#e1#n #t1092003##k and #b#e1#n #t1302024##k? Once you have those items I&apos;ll get them to the right folk around town. That should work I would think, or maybe just because I&apos;m small and cute... I&apos;ve got a nice silk #bheadband#k I can give in return and a #rlead on the location to my brother#k!"/>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Incredible! This should work perfect for the townspeople. Here&apos;s a #bheadband#k in return! Check in on #bHeena#k, she thought she saw my brother near by."/>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Wait!?!! It looks like you haven&apos;t collected all the equipment. Are you sure you have #b#e1#n #b#t1082002##k, #b#e1#n #t1092003##k and #b#e1#n #t1302024##k?"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2029">
+        <imgdir name="0">
+            <string name="0" value="I was working on the ticketing booth and the tunnel started to shake. Then before I knew it, it collapsed. Bell went the other way... oh, I hope he is alright...\n\nThe way it shook was odd though...It didn&apos;t seem random, almost like a rythym. There wasn&apos;t any noise, it was just shake...shake...shake..."/>
+            <string name="1" value="#eHe IS?!?!#n\n\nI&apos;m so glad to hear...\n\nI myself barely made it out but I am A-Okay as well. I&apos;ve been stuck up here since running away from the collapse.\n\nMy screwdriver fell out of my tool bag while running and I think a slime bounced over it and absorbed it...\n\nIf I could get my #rscrewdriver#k back, I can battle my way past these slimes no problem. Could you find it for me?\n\nPeople lose all kinds of jewelry in the subway. You can have this #rring#k if you help out..."/>
+            <imgdir name="yes">
+                <string name="0" value="Awesome! Once you&apos;ve got my #rscrewdriver#k bring it back and I&apos;ll get out of here and starting fixing things up after I check in on Bell."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well at least send help..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Whoa ... you came back much earlier than I thought! There were so many slimes, I wasn&apos;t sure if you would ever get the right one."/>
+            <imgdir name="yes">
+                <string name="0" value="Hopefully you stick around this town. We sure can use a person like you for help! I&apos;m on my way out now, thank you!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It doesn&apos;t look like you have my #rscrewdriver#k yet. That would be very helpful to get out of here."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2062">
+        <imgdir name="0">
+            <string name="0" value="Hi...\n\nIcarus and I came out here to get away from the city since the air is so heavy. He was flying his kite and it got caught in the &quot;dead&quot; trees over there. When we went to grab it, the tree started moving and ran off with it.\n\nI ran over here and he ran back to the city. I&apos;m too scared to head back that way now... Could you take out some #rAxe Stumps#k and some #rSmirking Ghost Stump#k so I can go home? Icarus would really appreciate it if you found his #rkite#k as well."/>
+            <imgdir name="yes">
+                <string name="0" value="Thank you...so much...\n\n#e50#n #rAxe Stumps#k and #e50#n #rSmirking Ghost Stumps#k should be enough. Make sure to grab Icarus&apos; #rkite#k on the way through."/>
+                <string name="1" value="Thanks again, that&apos;s very nice of you. I&apos;ll keep an eye out for when you clear em out and run by as fast as possible.\n\nI&apos;m sure Icarus will be excited to see his kite again as well."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Please... My parents are going to worry about me."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh wow, you found my kite AND lead Estelle home, thank you so much! It&apos;s not much but grandpa is the local pharmacist. He&apos;s always trying to get me to drink his new potions. Why don&apos;t you try em out instead..."/>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="You don&apos;t have my #rkite#k... Please find that for me."/>
+                </imgdir>
+                <imgdir name="mob">
+                    <string name="0" value="You left #rEstelle#k to fend for herself... She&apos;s just a kid. I know I&apos;m a kid too...THAT&apos;S WHY I COULDN&apos;T HELP HER. PLEASE!"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2071">
+        <imgdir name="0">
+            <string name="0" value="I&apos;m Dr. Squint!\n\n I can&apos;t see much, especially with the extra pollution in the air.\n\nI try to stay on the *bleeding* edge of modern medicine, haha, bleeding, get it? Cuz I&apos;m a doctor?\n\nAnyway, I heard about your heroics in the #bsubway#k and I&apos;m intrigued by these #rnew slimes#k in the subway and #rligators#k in the #bwetlands#k. I believe if we were to gather a good amount of their colored #rdrops#k, I could speed up Jane&apos;s recovery. Would you do that for me? I mean...her?"/>
+            <imgdir name="yes">
+                <string name="0" value="Ohhhhhhh, yes. I&apos;m excited now.\n\nCan&apos;t wait to see what I can concoct with these new slimes. Jane will be my first test case...hopefully not the last! Haha, just kidding!\n\nSince this is new medicine, we&apos;ll need lots of samples for testing. I think #r30#k of each #rslime drop#k and #r35#k of each #rligator skin#k should do the trick.\n\nWhile you are in the #bwetlands#k, please grab some #rOrchid Samples#k as well. This will help with the pain of the procedure..."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="...I guess that&apos;s a no. She&apos;ll stay in agony then."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don&apos;t think you have gathered up all of the required materials yet. Please help me...I mean Jane..."/>
+                </imgdir>
+            </imgdir>
+            <string name="0" value="Ah, these are perfect for my tests!!\n\n Jane, come quick, let&apos;s get to work!"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2072">
+        <imgdir name="0">
+            <string name="0" value="Ah ... turns out, the doc couldn&apos;t apply the serum. Want to know why? I&apos;m a ghost, wow, yeah, shocked? Me too..."/>
+            <string name="1" value="Aw, well, guess I shoulda seen that coming.\n\n Anyway, thank you so much. I guess I can take the bandages off and leave whenever. It&apos;s waaaaay too cold in here."/>
+            <string name="2" value="Since I&apos;m dead...\n\nI&apos;ve got no use for this #rFashionista#k card. Do you want it?"/>
+            <imgdir name="yes">
+                <string name="0" value="Well, thanks again for trying to heal me. Make sure you have room in your #rsetup#k tab."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Odd... I&apos;m not asking for anything else in return..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Take good care of it, I hear it&apos;s pretty rare. It&apos;s just one, I think there are #rfive#k of them total. Some people realllllllly like them. They&apos;re quite sought after."/>
+            <imgdir name="yes">
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2128">
+        <imgdir name="0">
+            <string name="0" value="Is it really you?... \n\nI&apos;m hoping you&apos;re the one that can help me. I&apos;m Adonis and need your help, but you are too weak right now. I see it though... With some training you could be strong enough. Are you willing to train?\r\n#L0# #bYes, I Am!#l"/>
+            <string name="1" value="We need to work quickly. Something is stirring in the vault! I&apos;m running out of time!"/>
+            <int name="ask" value="1"/>
+            <imgdir name="stop">
+                <imgdir name="0">
+                    <int name="answer" value="1"/>
+                    <string name="1" value="If you start to believe in yourself, I think you will see it too."/>
+                </imgdir>
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Deep in the heart of the desert lies the #bBlack Vault#k. You are far too weak to enter now. It will take time before you are ready to face it&apos;s challenges. Luckily, there are some weaker monsters not too far from here. That is a great place to start your training!\n\nPlease let me know when you have defeated #r50 #o1110100#s#k. #r#o1110100#s#k can be found in #bZone 2#k."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I had a feeling you weren&apos;t the one, guess they were wrong..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="You got rid of 50 #r#o1110100#s#k. Good. I think you have what it takes. You&apos;ll face trials and tribulations on your way to me. If you can make your way to me, I&apos;ll know you are the one to clear the #bBlack Vault#k."/>
+            <imgdir name="yes">
+                <string name="0" value="Until we meet again!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="You haven&apos;t killed #r50#o1110100#s#k yet. Try harder if you want to be stronger."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2132">
+        <imgdir name="0">
+            <string name="0" value="Hey! Hi? Helloooo!? Are you there? Oh, yes you are...okay. Hi again! I am #rThe Beauty Queen#k! Well, at least, yeah, that&apos;s what uhhhh, people call me. I just reaaaaaaallllly like doing makeovers.\n\nWould you like one? Ha, I don&apos;t think so, not yet at least. You gotta show me your love for fashion!\n\nHmmmm, what&apos;s that you have there? Is that one of the five #rFashionista#k cards?!?!?! Oh my, well maybe you do like fashion a little, I&apos;m not sure. Hard to tell based on just one card. A real fashionista would collect all five..."/>
+            <string name="1" value="Well collect all five and I can make you over in any which way you like! Or I like! Or whatever is popular! Who knows! Come talk to me with the cards, okay?"/>
+            <imgdir name="yes">
+                <string name="0" value="Oh yeah, and uhhh, you also gotta find me.\n\nI&apos;m not hiding per se, I just know that only real fashionistas can find me.\n\n Find all five #rFashionista#k cards and then solve the riddle to find me! EZPZ, mmmmmk! Wooooooooo, can&apos;t wait to doll you up!!!"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh well, stay lookin raggedy then! Don&apos;t blame me!"/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Ohhhhhhhh, there you are again. Yes! Amazing! You don&apos;t look very good now, but you can soon! Let&apos;s see! Oh, yes! I told you to collect the cards and find me. You&apos;ve obviously found me, let&apos;s see your cards!"/>
+            <imgdir name="yes">
+                <string name="0" value="FINALLY! I HAVE THEM ALL! ALL FIVE FASHIONISTAS ARE MINE!\n\n(clears her throat) Ahem. I&apos;m sorry, this has been a long time coming. Honestly, I had no cards before you gave me yours, so thanks for collecting the whole set. \n\nIn return, here is my #rBeauty Coupon#k! This is good for infinite uses with yours truly, The Beauty Queen! Are you ready for a makeover right now? Huh, are ya? Let&apos;s goo!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I&apos;m not real sure how you got here...you must have insider information!!! That said, I&apos;m not giving you a makeover until you collect all the cards! And that&apos;s, that!"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2213">
+        <imgdir name="0">
+            <string name="0" value="I wasn&apos;t sure about you at first, #e#h ##n.\n\nI&apos;ve been watching though. I&apos;ve seen all the work you&apos;ve done around the city. Now... I trust that you will get to the bottom of this."/>
+            <string name="1" value="...Hush. Keep your voice down. You never know who&apos;s hiding nearby... Are you determined to get to the bottom of this city&apos;s problem? Is that why you&apos;re here? You seem like an adventurer... yet a weak, scrawny one. It won&apos;t be that easy. Are you ready for it? Hm?"/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="We need to figure out where all this pollution is coming from. I&apos;d start with #rNella#k. If anyone knows anything, it&apos;s her. You&apos;ll need this #rinvestigation permit#k. Nella might start talking now..."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Maybe you are not the person I thought you were..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Oh, you are working with the Mayor? JM? We used to date, ya know? Then I found some skeletons in the closet and...Well, maybe that&apos;s for another time.\n\nHe wants to know who or whats behind the pollution in the city? I don&apos;t know...I did recently confirm that #rMong from Kong#k is not who he says he is. His real name is #rWong from Dong#k...\n\n(Wong?...from Dong??)\n\nI wasn&apos;t sure at first, but I heard a rumor that Alex was from the same city as Mong, and that his name was actually Wong.\n\nI looked into it and yeah, here are the papers to prove it. He&apos;s a known criminal from Herb Town..."/>
+            <imgdir name="yes">
+                <string name="0" value="Go confront #rMong#k...errrr...Wong."/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2214">
+        <imgdir name="0">
+            <string name="0" value="(Hey MONG...or should I say WONG!)\n\n*surprised*...Uh, who me? My name is M, M, Mong...\n\n(Give it up, I got the proof right here, explain yourself)\n\nOkay, okay, calm down. Me and the boss were caught and forced out of Herb Town.\n\n (You are going to jail if you don&apos;t keep talking!)\n\nWe are running an underground smelting business, turning ores and gems into their refined components.\n\n(Who are you working for?)\n\nI can&apos;t say, he&apos;ll hunt me down...\n\n(Last chance)\n\nOkay, okay, shit...it&apos;s G, Go...#rGold Richie#k!, It&apos;s #rGOLD RICHIE#k okay!!?! It&apos;s ALL him, he&apos;s forcing me to do this, he&apos;s got my wife and kids...\n\n(Where is he?)\n\nI don&apos;t know, really, I don&apos;t know. I&apos;ve been dropping off shipments daily at the phone booth in the middle of town. That&apos;s all I know, I have to get the shipments from the docks and drop it off at phone booth in mid town. #bHe&apos;s lazy, so I know his location isn&apos;t far from the drop point#k."/>
+            <imgdir name="yes">
+                <string name="0" value="I want to turn over a new leaf, but I can&apos;t with my boss still out there. Please find him and stop him."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you find out what the cause is? Keep your voice down..."/>
+            <imgdir name="yes">
+                <string name="0" value="So Mong from Kong, is actually Wong from Dong. He&apos;s working for Gold Richie because he has his family held hostage... These streets really are crazy these days..."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="It doesn&apos;t look like you&apos;ve found out who or what is responsible. Keep looking..."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="npc">
+                    <int name="0" value="1052012"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2215">
+        <imgdir name="1">
+            <string name="0" value="Money, money, money, we are prrrrrrrrinting MONEY!!!\n\nAhhhh! Who are you? How did you find me?... That double crossing...Wong...his fam\n\n(Eat your words, this ends now and you won&apos;t touch his family!)\n\nHold on, I&apos;m not a fighter. I give up!\n\n(Really?...??)\n\nYeah never have been a fighter, take me in...*under his breath*...(I&apos;ll just escape)...\n\n(What&apos;s going on here?)\n\nIt&apos;s obvious right? We took over the abandoned repair shop and turned it into a well oiled money printing machine. Wong drops off the ore and gems, I refine em. Night and day, we are making a killing.\n\n(Thinking...this must be the cause of the pollution and new slimes)\n\nNot anymore, the authorities will be here any moment."/>
+            <string name="1" value="*the building begins to shake*\n\n(Oh no, not again!)\n\nSince we&apos;ve really ramped up operations, these earthquakes are becoming more prominent...couldn&apos;t be us though!\n\n(I should check back in with #rJM#k)"/>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="#rGold Richie#k, in my city? That son of a gun. All your efforts need to be focused on finding him. Don&apos;t waste any more time..."/>
+            <string name="1" value="Mon...I mean Wong said that #rGold Richie#k is lazy and that he should be found somewhere near the midtown phone booth. Probably best to start our search in that area."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2216">
+        <imgdir name="1">
+            <string name="0" value="You must be the person JM was talking about.\n\nI&apos;m not supposed to talk about government matters publically, but dire times call for dire risks.\n\n(Ground shakes again, Ervine falls over...)\n\nUgh, ahhh! I&apos;m okay, just a moment. Last week I was looking into the low water pressure and I found an #rabnormally large slime#k. Actually, now come to think of it...that&apos;s about the same time these earthquakes started happening...\n\nOh no, I&apos;m such a fool. I should have told JM about the slime right away.\n\nThat must be the cause! One of the slimes mutated and is clogging up the water system. Hurry, take my #rkey#k and tell JM!"/>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="(The ground shakes again)\n\nWe have to figure out the cause of these earthquakes. The town is gonna fall apart if we don&apos;t act fast enough.\n\n#rErvine#k made an unusual note that many residents were complaining of low water pressure in his last monthly report. That&apos;s not typically a problem for us, being so close to Lith.\n\nHurry! Go see #rErvine#k to see if he has more information."/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2217">
+        <imgdir name="1">
+            <string name="0" value="You did it. I can&apos;t believe it, you really did it.\n\n#e#h ##n, the city is eternally grateful.\n\nSince we stopped #rGold Richie#k, the air has already lightened up... an now, with #rKing Slime#k gone, the citizens can rest easy."/>
+            <string name="1" value="Here is your reward for saving the city!\n\n#bHuckle&apos;s shop has been updated!#k\n#rZone 2 Conqueror Medal#k"/>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="A giant slime in the sewers huh? Wow, we should&apos;ve known.\n\nOh Ervine... He can be so forgetful.\n\nWe need you now more than ever, #e#h ##n!\n\n Go into the sewers, defeat #rKing Slime#k, bring back proof of his demise, save the city!"/>
+        </imgdir>
+    </imgdir>
+    <imgdir name="28268">
+        <imgdir name="1">
+            <string name="0" value="Oh thank goodness you found me! I wasn&apos;t sure if anyone was coming..."/>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="I&apos;m really worried about Jake...\n\n(Bell is coughing heavily)\n\nPlease go look for him!"/>
+            <imgdir name="yes">
+                <string name="0" value="Oh thank you for helping. Things could be quite bad down there!"/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="28269">
+        <imgdir name="1">
+            <string name="0" value="Ah, amazing! This will show Mom and Dad I can do it! And...I didn&apos;t forget, here&apos;s that piece of paper, maybe you can figure it out..."/>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="I don&apos;t think you have gathered up #r75#k of each item yet. If I don&apos;t bring back enough, Mom and Dad will know I&apos;m not ready..."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="I&apos;ve been telling Mom and Dad that I&apos;m ready to go out on my own hunting for the vault. They don&apos;t think I&apos;m ready yet..."/>
+            <string name="1" value="They said, if I can gather everything on this list, not only would it help them prepare for the heatwave, but it would also prove that I&apos;m ready to go out on my own.\n\nAfter hunting for a bit, I found this #rpiece of paper#k under some rocks. It has some weird writing on it. I think it&apos;s a riddle.\n\nIt doesn&apos;t make much sense to me, but I bet you can figure it out. How about you help me get the rest of these resources so I can prove Mom and Dad wrong and you can have this paper in return?"/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Great! Then I can get out of this heat and show Mom and Dad I&apos;m ready to go off on my own...\n\nLooks like I still need 75 of each; #rCactus Stem, Firewood, Wooden Hammer, Slate#k"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh alright, well maybe it&apos;s just a piece of paper after all..."/>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="28271">
+        <imgdir name="0">
+            <string name="0" value="I get up every day and roll around town picking up everyone&apos;s trash. How? I don&apos;t know either. It&apos;s just happening, so we gotta go with it.\n\nSeems like the city is growing larger every day and theres more and more trash. Could you help me get back on track by getting the trash from the #rBack Alley#k?"/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If you go to the #b#m103000007##k, you&apos;ll find #rBiner#k. The entrance is by the #requipment store#k. Take out a bunch of those and bring back #r75#k pieces of trash. That should help me get back on track!"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Well that&apos;s not very nice, it&apos;s not every day you run into a trash collecting snowman."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you collect all that trash?"/>
+            <imgdir name="yes">
+                <string name="0" value="Aw, that was nice of you. However, now that I think of it. There is just going to be more tomorrow. Thanks...I guess..."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It doesn&apos;t look like you got all the trash I needed you to. It would really help me out. I&apos;m meltin over here."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="28272">
+        <imgdir name="0">
+            <string name="0" value="My Mom threw away my favorite shoes. I guess they were pretty old. The thing is, they were my favorite. I really liked them, because unlike normal gomushin, I didn&apos;t feel fast, I felt like I could jump really high.\n\nThat was really cool to me. My friends were all jealous too... \n\n#e#rDo you think you could go beat up some trash cans to find my shoes?#n#k\n\nI&apos;ll hide em good this time so my Mom can&apos;t find them. Not sure what to do about the smell though..."/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="If I had to guess, #rFrosty#k hasn&apos;t picked up the trash yet. They are probably in the #bBack Alley#k still. Look for the trash buildup next to the #requipment store#k. It gets bad right before trash day."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="I swear...They aren&apos;t thaaaat smelly."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you find my favorite #rSmelly Gomushin#k? Oh man, I&apos;m so excited!"/>
+            <imgdir name="yes">
+                <string name="0" value="Oh, thank you so much. I gotta hide these fast before my Mom sees."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Uhhhhhh, those don&apos;t look like my #rSmelly Gomushin#k..."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="21701">
+        <imgdir name="0">
+            <string name="0" value="Hey #h #! Looks like you are headed for Kerning.\n\nBefore I ran away, I used to train with my father. I could probably teach you some of the stuff I learned.\n\nWhy don&apos;t you bring me something to eat like a #rFrozen Tuna#k and beat up on 50 #rBlue Mushrooms#k to prove you are strong enough to learn the skills."/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="Sounds great, seeya soon!"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="No? Why? I don&apos;t know how far you&apos;ll get with basic skills like that..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Let&apos;s see, did you take out the #rBlue Mushrooms#k and bring me a #rFrozen Tuna#k?"/>
+            <imgdir name="yes">
+                <string name="0" value="Awesome, you took out the #rBlue Mushrooms#k and brought me some food. Ya know, you look hungrier than me after battling all those mushrooms. Why don&apos;t you just keep the #rFrozen Tuna#k? You&apos;ll need it after this training we are about to do. Thanks!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="mob">
+                    <string name="0" value="Doesn&apos;t look like you took out enough #Blue Mushrooms#k..."/>
+                </imgdir>
+                <imgdir name="item">
+                    <string name="0" value="You didn&apos;t bring me a #rFrozen Tuna#k, make sure it&apos;s in your inventory...You&apos;ll need a second one to use..."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="2136">
+        <imgdir name="0">
+            <string name="0" value="Hey! I&apos;m Bri!\n\nI love Balloons! As a matter of fact, I had one of each color as part of my collection...Key word &quot;had&quot;. A big wind storm came through and blew them away.\n\nThey went in every which direction, I&apos;m sure they are all over the world by now. "/>
+            <string name="1" value="Would you be willing to help find them all? I&apos;m offering a really great reward for anyone that can find all 10 missing balloons."/>
+            <imgdir name="yes">
+                <string name="0" value="Amazing! I can&apos;t wait to get them all back. I assure you the reward is worth the work.\n\nI can&apos;t stress enough, you will have to look EVERYWHERE to find these balloons. Sometimes you&apos;ll even have to get into areas in interesting ways to find them. Once you have all 10, bring em back and the reward is yours!"/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="That&apos;s okay, I&apos;m sure someone else wants this item that will help them loot..."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Did you really find them all? No way... Let me see them!"/>
+            <imgdir name="yes">
+                <string name="0" value="Oh my gosh, you collected all 10 of my balloons...I didn&apos;t think anyone could do it. It&apos;s hard for me to give this up, but here ya go.\n\nYou can have my #eItem Vac#n!"/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="It doesn&apos;t look like you have them all yet. Keep looking!"/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="28270">
+        <imgdir name="0">
+            <string name="0" value="Many travelers come up here seeking the vault. What they don&apos;t realize is that even though this is the fiery mountain, it get&apos;s quite cold at night. Poor Thorne&apos;s blanket is no good anymore.\n\nDo you think you could gather me some cloth so I can knit him a new one?"/>
+            <imgdir name="stop">
+            </imgdir>
+            <imgdir name="yes">
+                <string name="0" value="You&apos;ll have to clear the #bpeak#k to find #rcloth#k. They drop from a number of creatures on the far side of the mountain, but none over here."/>
+            </imgdir>
+            <imgdir name="no">
+                <string name="0" value="Oh...he might freeze.."/>
+            </imgdir>
+        </imgdir>
+        <imgdir name="1">
+            <string name="0" value="Back already? Thanks to you, my friends in #b#m100000000##k will be able to come visit me more often! Thank you! Hee hee!"/>
+            <imgdir name="yes">
+                <string name="0" value="Oh, these are perfect for little Thorne, I&apos;ll get to work right away...\n\nEnjoy this ring, it used to be one of my favorites..."/>
+            </imgdir>
+            <imgdir name="stop">
+                <imgdir name="item">
+                    <string name="0" value="Doesn&apos;t look like you have enough #rcloth#k for me. Clear the #bpeak#k and the monsters on the far side have a chance to drop them..."/>
+                </imgdir>
+            </imgdir>
+        </imgdir>
+    </imgdir>
+    <imgdir name="1008">
+        <imgdir name="0">
+            <string name="0" value="That looks yummy... I demand you bring that here at once!"/>
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1029">
+        <imgdir name="0">
+        </imgdir>
+        <imgdir name="1">
+        </imgdir>
+    </imgdir>
+    <imgdir name="1002">
+        <imgdir name="1">
+        </imgdir>
+        <imgdir name="0">
+            <string name="0" value="Oh! You found one!\n\nI&apos;m #rRinne#k and I&apos;m not from around here, but we&apos;ll get to know eachother...\n\nI&apos;m looking for those coins, could you come see me in #bKora#k?"/>
+        </imgdir>
+    </imgdir>
+</imgdir>

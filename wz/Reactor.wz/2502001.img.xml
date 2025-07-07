@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<imgdir name="2502001.img">
+    <imgdir name="info">
+        <string name="info" value="나무열매1"/>
+    </imgdir>
+    <imgdir name="0">
+        <imgdir name="event">
+            <imgdir name="0">
+                <int name="type" value="100"/>
+                <string name="0" value="4007029"/>
+                <int name="1" value="1"/>
+                <int name="2" value="1"/>
+                <vector name="lt" x="-43" y="-74"/>
+                <vector name="rb" x="57" y="4"/>
+                <int name="state" value="0"/>
+            </imgdir>
+        </imgdir>
+        <canvas name="0" width="113" height="36" pixFormat="1" magLevel="0" bytedata="eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAgBcD">
+            <vector name="origin" x="52" y="36"/>
+            <int name="z" value="0"/>
+        </canvas>
+    </imgdir>
+</imgdir>

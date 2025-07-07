@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9800022.img">
+    <imgdir name="info">
+        <int name="hideName" value="1" />
+    </imgdir>
+    <imgdir name="cry">
+        <canvas name="0" width="40" height="36">
+            <vector name="origin" x="20" y="36" />
+            <int name="delay" value="4000" />
+        </canvas>
+    </imgdir>
+    <imgdir name="stand">
+        <canvas name="0" width="40" height="41">
+            <vector name="origin" x="20" y="41" />
+            <int name="delay" value="1200" />
+        </canvas>
+        <canvas name="1" width="40" height="41">
+            <vector name="origin" x="20" y="41" />
+            <int name="delay" value="60" />
+        </canvas>
+        <canvas name="2" width="40" height="41">
+            <vector name="origin" x="20" y="41" />
+            <int name="delay" value="60" />
+        </canvas>
+    </imgdir>
+    <imgdir name="stand1">
+        <canvas name="0" width="40" height="41">
+            <vector name="origin" x="20" y="41" />
+            <int name="delay" value="1000" />
+        </canvas>
+        <canvas name="1" width="40" height="42">
+            <vector name="origin" x="20" y="42" />
+            <int name="delay" value="150" />
+        </canvas>
+        <canvas name="2" width="40" height="42">
+            <vector name="origin" x="20" y="42" />
+            <int name="delay" value="100" />
+        </canvas>
+    </imgdir>
+</imgdir>

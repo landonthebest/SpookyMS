@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9800006.img">
+    <imgdir name="info">
+        <int name="dcBottom" value="0" />
+        <int name="dcLeft" value="-40" />
+        <int name="dcRight" value="40" />
+        <int name="dcTop" value="-63" />
+    </imgdir>
+    <imgdir name="stand">
+        <canvas name="0" width="87" height="66">
+            <vector name="origin" x="43" y="66" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+</imgdir>

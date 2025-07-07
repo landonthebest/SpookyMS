@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="WorldMap011.img">
+    <imgdir name="info">
+        <string name="parentMap" value="WorldMap" />
+    </imgdir>
+    <imgdir name="BaseImg">
+        <canvas name="0" width="640" height="452">
+            <vector name="origin" x="320" y="226" />
+            <int name="z" value="0" />
+        </canvas>
+    </imgdir>
+    <imgdir name="MapList" />
+</imgdir>
