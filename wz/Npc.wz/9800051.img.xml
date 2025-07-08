@@ -2,9 +2,9 @@
 <imgdir name="9800051.img">
     <imgdir name="info" />
     <imgdir name="stand">
-        <canvas name="0" width="150" height="150">
+        <canvas name="0" width="125" height="125">
             <int name="z" value="0" />
-            <vector name="origin" x="68" y="142" />
+            <vector name="origin" x="61" y="146" />
         </canvas>
     </imgdir>
 </imgdir>

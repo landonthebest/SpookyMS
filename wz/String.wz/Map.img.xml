@@ -3830,7 +3830,7 @@
         </imgdir>
         <imgdir name="220000306">
             <string name="streetName" value="First Room" />
-            <string name="mapName" value="Entertainment Tent" />
+            <string name="mapName" value="Casino" />
         </imgdir>
         <imgdir name="220000307">
             <string name="streetName" value="Ludibrium" />

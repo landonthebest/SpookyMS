@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<imgdir name="9100200.img">
+<imgdir name="9800053.img">
     <imgdir name="info">
-        <int name="dcLeft" value="-50" />
-        <int name="dcTop" value="-140" />
-        <int name="dcRight" value="50" />
-        <int name="dcBottom" value="0" />
         <imgdir name="script">
             <imgdir name="0">
-                <string name="script" value="Pachinko_machine" />
+                <string name="script" value="baccarat" />
             </imgdir>
         </imgdir>
+        <int name="dcLeft" value="-39" />
+        <int name="dcTop" value="-81" />
+        <int name="dcRight" value="33" />
+        <int name="dcBottom" value="-1" />
     </imgdir>
     <imgdir name="stand">
         <canvas name="0" width="125" height="125">
+            <vector name="origin" x="61" y="120" />
             <int name="z" value="0" />
-            <vector name="origin" x="55" y="141" />
+            <int name="delay" value="2500" />
         </canvas>
     </imgdir>
 </imgdir>

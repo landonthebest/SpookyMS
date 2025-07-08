@@ -5230,7 +5230,7 @@
         <string name="name" value="Gachapon" />
     </imgdir>
     <imgdir name="9100200">
-        <string name="name" value="Blackjack Table $$$" />
+        <string name="name" value="Blackjack Dealer" />
     </imgdir>
     <imgdir name="9100201">
         <string name="name" value="Pachinko 2" />
@@ -8601,9 +8601,12 @@
         <string name="name" value="Elegant Slot Machine" />
     </imgdir>
     <imgdir name="9800051">
-        <string name="name" value="Red Dog Game" />
+        <string name="name" value="Red Dog Dealer" />
     </imgdir>
     <imgdir name="9800052">
         <string name="name" value="Marina [Slayer Master]" />
+    </imgdir>
+    <imgdir name="9800053">
+        <string name="name" value="Baccarat Dealer" />
     </imgdir>
 </imgdir>

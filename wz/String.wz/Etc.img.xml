@@ -9766,5 +9766,21 @@
             <string name="desc" value="This is a card for the Blackjack Table in the entertainment tent!&#xD;&#xA;\nYou can win items, mesos, or special items!" />
             <string name="name" value="Blackjack Token" />
         </imgdir>
+        <imgdir name="4310026">
+            <string name="desc" value="Need 3 to enter bonus spins" />
+            <string name="name" value="Bonus Symbol" />
+        </imgdir>
+        <imgdir name="4310027">
+            <string name="desc" value="2x Multi" />
+            <string name="name" value="2x" />
+        </imgdir>
+        <imgdir name="4310028">
+            <string name="desc" value="3x Multi" />
+            <string name="name" value="3x" />
+        </imgdir>
+        <imgdir name="4310029">
+            <string name="desc" value="4x Multi" />
+            <string name="name" value="4x" />
+        </imgdir>
     </imgdir>
 </imgdir>

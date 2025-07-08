@@ -65,6 +65,10 @@ public final class NPCTalkHandler extends AbstractPacketHandler {
                     return;
                 }
 
+                if (npc.getId() == 9800053) {
+                    NPCScriptManager.getInstance().start(c, npc.getId(), "baccarat", null);
+                    return;
+                }
                 if (npc.getId() == 9800052) {
                     NPCScriptManager.getInstance().start(c, npc.getId(), "slayer", null);
                     return;
