@@ -227,11 +227,26 @@ public abstract class AbstractMovementPacketHandler extends AbstractPacketHandle
                     break;
                 }*/
                 case 15: {
-                    //Jump down movement - stance only
-                    p.skip(12); //short xpos = lea.readShort(); ypos = lea.readShort(); xwobble = lea.readShort(); ywobble = lea.readShort(); fh = lea.readShort(); ofh = lea.readShort();
-                    byte newstate = p.readByte();
-                    target.setStance(newstate);
-                    p.readShort(); // duration
+                    // Jump down movement - stance only for monsters, full for players
+                    if (target instanceof server.life.Monster) {
+                        // Ignore the position data—monster stays put
+                        p.skip(12); // skip all position data
+                        byte newstate = p.readByte();
+                        target.setStance(newstate);
+                        p.readShort(); // duration
+                    } else {
+                        // For players, actually move them down
+                        short xpos = p.readShort();
+                        short ypos = p.readShort();
+                        short xwobble = p.readShort();
+                        short ywobble = p.readShort();
+                        short fh = p.readShort();
+                        short ofh = p.readShort();
+                        byte newstate = p.readByte();
+                        target.setPosition(new Point(xpos, ypos + yOffset)); // update player pos
+                        target.setStance(newstate);
+                        p.readShort(); // duration
+                    }
                     break;
                 }
                 case 21: {//Causes aran to do weird stuff when attacking o.o

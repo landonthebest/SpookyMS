@@ -8609,4 +8609,7 @@
     <imgdir name="9800053">
         <string name="name" value="Baccarat Dealer" />
     </imgdir>
+    <imgdir name="9800054">
+        <string name="name" value="Hi or Low" />
+    </imgdir>
 </imgdir>

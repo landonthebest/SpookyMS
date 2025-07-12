@@ -131,7 +131,7 @@
                 <imgdir name="4">
                     <int name="x1" value="-813" />
                     <int name="y1" value="-25" />
-                    <int name="x2" value="-368" />
+                    <int name="x2" value="-372" />
                     <int name="y2" value="-25" />
                     <int name="prev" value="0" />
                     <int name="next" value="0" />
@@ -179,6 +179,16 @@
             <int name="rx1" value="-433" />
             <string name="type" value="n" />
             <int name="fh" value="4" />
+        </imgdir>
+        <imgdir name="4">
+            <string name="id" value="9800054" />
+            <int name="x" value="126" />
+            <int name="y" value="33" />
+            <int name="cy" value="41" />
+            <int name="rx0" value="106" />
+            <int name="rx1" value="146" />
+            <string name="type" value="n" />
+            <int name="fh" value="1" />
         </imgdir>
     </imgdir>
 </imgdir>

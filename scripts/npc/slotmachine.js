@@ -1,349 +1,279 @@
-// npc/slotmachine.js – Crash-proof, short-dialog slot machine with bonus spins
+/*
+ * Casino Slot Machine NPC
+ * @NPC: 9901000
+ * MapleStory v83 compatible
+ * 5x5 slot, column reveals, random weights, per-symbol payouts, multipliers as icons, 15% tax
+ * Unique cell payout, minimal summary (no symbol names), safe for v83
+ */
 
-var status = -1;
-var cost = 4310024;
+var status = 0;
+var rows = 5;
+var cols = 5;
+var spinCost = 1000;
+var taxRate = 0.15;
 
-var slot = [];
-var inFreeSpins = false;
-var freeSpins = 0;
-var freeSpinRewards = 0;
-var freeSpinStep = 0;
-var thisSpinBonusAmt = 0; // number of spins this bonus awards
-var breakdownLines = null, breakdownIdx = 0, breakdownTotal = 0, breakdownMeso = 0, inBreakdown = false;
-
-var bonusSymbol = "#v4310026#";
-var icons_normal = [
-    "#v4310015#","#v4310016#","#v4310017#","#v4310018#","#v4310019#",
-    "#v4310021#","#v4310022#","#v4310023#"
+var baseSymbols = [
+    { id: 4310015, name: "Orange Marble", payout: 200 },
+    { id: 4310016, name: "Diamond", payout: 10000 },
+    { id: 4310017, name: "Emerald", payout: 5000 },
+    { id: 4310018, name: "Gold Coin", payout: 1500 },
+    { id: 4310019, name: "Blue Marble", payout: 800 },
+    { id: 4310021, name: "Yellow Star", payout: 2000 },
+    { id: 4310022, name: "Red Gem", payout: 3500 },
+    { id: 4310023, name: "Leaf", payout: 600 }
 ];
-var icons_multipliers = [
-    "#v4310027#","#v4310028#","#v4310029#"
+
+// Multiplier symbols: [id, multiplier]
+var multiplierSymbols = [
+    [4310027, 2],
+    [4310028, 3],
+    [4310029, 4]
 ];
-var MULTIPLIERS = {
-    "#v4310027#": 2,
-    "#v4310028#": 3,
-    "#v4310029#": 4,
-    "#v4310026#": 1
-};
-var ALL_ICONS = icons_normal.concat(icons_multipliers).concat([bonusSymbol]);
+var multiplierValueToId = {};
+for (var i = 0; i < multiplierSymbols.length; i++) {
+    multiplierValueToId[multiplierSymbols[i][1]] = multiplierSymbols[i][0];
+}
+
+var board = null;
+var revealCol = 0;
+var symbolWeights = null;
 
 function start() {
     status = -1;
-    inFreeSpins = false;
-    freeSpins = 0;
-    freeSpinRewards = 0;
-    freeSpinStep = 0;
-    thisSpinBonusAmt = 0;
-    breakdownLines = null; breakdownIdx = 0; breakdownTotal = 0; breakdownMeso = 0; inBreakdown = false;
     action(1, 0, 0);
 }
 
 function action(mode, type, selection) {
-    if (mode != 1) return cm.dispose();
-
-    // Handle chunked breakdown dialog first
-    if (inBreakdown) {
-        showBreakdown();
+    if (mode == -1 || (mode == 0 && status == 0)) {
+        cm.dispose();
         return;
     }
-
-    status++;
-
-    if (inFreeSpins) {
-        handleFreeSpinFlow();
-        return;
-    }
+    status += (mode == 1 ? 1 : -1);
 
     if (status == 0) {
-        var msg = "#v4310020#\r\n#eSLOT MACHINE#n\r\n";
-        msg += "#L1##bSpin#l#k (Cost: #i" + cost + "# x1)\r\n";
-        cm.sendSimple(msg);
-
+        cm.sendYesNo("Spin the slot machine for " + spinCost + " mesos?");
     } else if (status == 1) {
-        if (!cm.haveItem(cost)) {
-            cm.sendOk("You don't have any #i" + cost + "#.");
-            return cm.dispose();
+        if (cm.getMeso() < spinCost) {
+            cm.sendOk("You don't have enough mesos.");
+            cm.dispose();
+            return;
         }
-        cm.gainItem(cost, -1);
-        spinSlot(false);
-        cm.sendNext(displaySlot(0));
+        cm.gainMeso(-spinCost);
+        symbolWeights = randomizeSymbolWeights();
+        board = generateBoard();
+        revealCol = 0;
+        cm.sendNext(formatPartialBoard());
+    } else if (status >= 2 && status <= cols) {
+        revealCol++;
+        cm.sendNext(formatPartialBoard());
+    } else if (status == cols + 1) {
+        var display = formatBoard(board);
+        var evalResult = evaluateBoard(board);
+        var winnings = evalResult.total;
+        var tax = Math.floor(winnings * taxRate);
+        var net = winnings - tax;
 
-    } else if (status >= 2 && status <= 6) {
-        cm.sendNext(displaySlot(status - 1));
-
-    } else if (status == 7) {
-        var grid = displaySlot(5);
-        var result = calculateLineRewards();
-        var bonusCount = countBonusWilds();
-        var msg = "#v4310020#\r\n#e#rSLOT MACHINE#k#n\r\n" + grid + "\r\n";
-
-        if (bonusCount >= 3) {
-            freeSpins = (bonusCount == 3) ? 10 : (bonusCount == 4 ? 14 : 20);
-            freeSpins = Math.min(freeSpins, 20);
-            inFreeSpins = true;
-            freeSpinRewards = 0;
-            freeSpinStep = 0;
-            thisSpinBonusAmt = freeSpins;
-
-            msg += "#e#bBONUS!#k You hit " + bonusCount + " bonus symbols!\r\n";
-            msg += "#fs14##r" + freeSpins + " FREE SPINS AWARDED!#k#n\r\n";
-            msg += "#fs12#(No bonus symbols in free spins, multipliers boosted!)";
-            cm.sendNext(msg);
-
+        display += "\r\nResults Summary:\r\n";
+        if (evalResult.lines.length > 0) {
+            for (var i = 0; i < evalResult.lines.length; i++) {
+                display += evalResult.lines[i].msg + "\r\n";
+            }
+            display += "\r\nTotal: " + formatNumber(winnings) + " mesos\r\n";
+            display += "Tax (15%): -" + formatNumber(tax) + " mesos\r\n";
+            display += "Net payout: " + formatNumber(net) + " mesos";
+            if (net > 0) {
+                cm.gainMeso(net);
+            }
         } else {
-            if (result.lines.length > 0) {
-                // Chunked breakdown dialog
-                breakdownLines = result.breakdown.split("\r\n");
-                breakdownIdx = 0;
-                breakdownTotal = breakdownLines.length;
-                breakdownMeso = result.totalMesos;
-                inBreakdown = true;
-                showBreakdown();
-                return;
-            } else {
-                msg += "No lines matched. Better luck next time!";
-                cm.sendOk(msg);
-                cm.dispose();
-            }
+            display += "No winning lines this spin.";
         }
-    }
-}
-
-// Chunked breakdown dialog to avoid Maple client crash
-function showBreakdown() {
-    var msg = "#v4310020#\r\n#e#rSLOT MACHINE#k#n\r\n";
-    var linesThis = 0;
-    while (breakdownIdx < breakdownTotal && linesThis < 3) {
-        if (breakdownLines[breakdownIdx]) {
-            msg += breakdownLines[breakdownIdx] + "\r\n";
-            linesThis++;
-        }
-        breakdownIdx++;
-    }
-    // Last chunk
-    if (breakdownIdx >= breakdownTotal) {
-        msg += "\r\n#eTotal Won: #r" + formatNumber(breakdownMeso) + "#k Mesos!#n";
-        cm.gainMeso(breakdownMeso);
-        inBreakdown = false;
-        cm.sendOk(msg);
+        cm.sendOk(display);
         cm.dispose();
-    } else {
-        msg += "#g(Next...)\r\n";
-        cm.sendNext(msg);
     }
 }
 
-// === FREE SPIN FLOW ===
-function handleFreeSpinFlow() {
-    if (freeSpinStep === 0) {
-        spinSlot(true); // free spin slot
+function randomizeSymbolWeights() {
+    var weights = [];
+    var totalWeight = 0;
+    for (var i = 0; i < baseSymbols.length; i++) {
+        var w = 1 + Math.floor(Math.random() * 8);
+        weights.push(w);
+        totalWeight += w;
     }
-    if (freeSpinStep < 6) {
-        cm.sendNext(displaySlot(freeSpinStep));
-        freeSpinStep++;
-        return;
+    var probs = [];
+    var accum = 0;
+    for (var i = 0; i < weights.length; i++) {
+        accum += weights[i] / totalWeight;
+        probs.push(accum);
     }
-
-    // Show result
-    var grid = displaySlot(5);
-    var result = calculateLineRewards();
-    var won = result.totalMesos;
-    var idx = thisSpinBonusAmt - freeSpins + 1;
-    var msg = "#v4310020#\r\n" +
-              "#e#bFREE SPIN " + idx + " / " + thisSpinBonusAmt + "#k#n\r\n" +
-              grid + "\r\n";
-    var bLines = result.breakdown.split("\r\n");
-    var linesShown = 0;
-    for (var i = 0; i < bLines.length && linesShown < 3; i++) {
-        if (bLines[i]) {
-            msg += bLines[i] + "\r\n";
-            linesShown++;
-        }
-    }
-    if (bLines.length > 3) msg += "(and more...)\r\n";
-    if (result.lines.length > 0) {
-        msg += "\r\n#eSpin Won: #r" + formatNumber(won) + "#k Mesos!#n";
-    } else {
-        msg += "No lines matched this spin.";
-    }
-    cm.sendNext(msg);
-
-    freeSpinRewards += won;
-    freeSpins--;
-    freeSpinStep = 0;
-
-    if (freeSpins > 0) {
-        return;
-    }
-
-    var summary =
-        "#e#bBONUS ROUND COMPLETE!#k#n\r\n" +
-        "You won a total of #r" + formatNumber(freeSpinRewards) + "#k Mesos from free spins!";
-    cm.sendOk(summary);
-    cm.gainMeso(freeSpinRewards);
-
-    inFreeSpins = false;
-    freeSpinRewards = 0;
-    freeSpins = 0;
-    thisSpinBonusAmt = 0;
-    cm.dispose();
+    return { weights: weights, probs: probs };
 }
 
-// --- CORE SLOT LOGIC (unchanged except defensive grid filling) ---
-
-function spinSlot(isFreeSpin) {
-    slot = [];
-    var i, j, pool = [], weights = {};
-
-    if (!isFreeSpin) {
-        // Normal: High bonus symbol, normal others
-        for (i = 0; i < icons_normal.length; i++) {
-            weights[icons_normal[i]] = 5 + Math.floor(Math.random() * 6);
+function generateBoard() {
+    var b = [];
+    for (var r = 0; r < rows; r++) {
+        b[r] = [];
+        for (var c = 0; c < cols; c++) {
+            var cell = getRandomSymbolWeighted();
+            cell._row = r;
+            cell._col = c;
+            b[r][c] = cell;
         }
-        for (i = 0; i < icons_multipliers.length; i++) {
-            weights[icons_multipliers[i]] = 2 + Math.floor(Math.random() * 2);
+    }
+    return b;
+}
+
+// -- Multiplier odds changed here --
+function getRandomSymbolWeighted() {
+    // Only about 1.5% chance for a multiplier now!
+    if (Math.random() < 0.985) {
+        var roll = Math.random();
+        for (var i = 0; i < baseSymbols.length; i++) {
+            if (roll < symbolWeights.probs[i]) {
+                var sym = baseSymbols[i];
+                return { id: sym.id, mult: 0, payout: sym.payout, name: sym.name };
+            }
         }
-        weights[bonusSymbol] = 8 + Math.floor(Math.random() * 4);
+        var last = baseSymbols[baseSymbols.length - 1];
+        return { id: last.id, mult: 0, payout: last.payout, name: last.name };
     } else {
-        // Free: NO bonus symbols, only hot normal & boosted multipliers
-        for (i = 0; i < icons_normal.length; i++) {
-            weights[icons_normal[i]] = 12 + Math.floor(Math.random() * 10);
-        }
-        for (i = 0; i < icons_multipliers.length; i++) {
-            weights[icons_multipliers[i]] = 7 + Math.floor(Math.random() * 5);
-        }
-        weights[bonusSymbol] = 0;
-    }
-
-    var iconsLoop = isFreeSpin
-        ? icons_normal.concat(icons_multipliers)
-        : ALL_ICONS;
-
-    for (i = 0; i < iconsLoop.length; i++) {
-        var sym = iconsLoop[i];
-        for (j = 0; j < (weights[sym] || 0); j++) {
-            pool.push(sym);
-        }
-    }
-    if (pool.length < 10) {
-        for (i = 0; i < icons_normal.length; i++) {
-            for (var k = 0; k < 3; k++) pool.push(icons_normal[i]);
-        }
-    }
-    if (pool.length === 0) {
-        for (var f = 0; f < 25; f++) pool.push(icons_normal[0]);
-    }
-
-    for (i = 0; i < 5; i++) {
-        slot[i] = [];
-        for (j = 0; j < 5; j++) {
-            slot[i][j] = pool[Math.floor(Math.random() * pool.length)];
-        }
+        var pick = multiplierSymbols[Math.floor(Math.random() * multiplierSymbols.length)];
+        return { id: pick[0], mult: pick[1], payout: 0, name: pick[1] + "x" };
     }
 }
 
-function displaySlot(col) {
-    var out = "";
-    for (var r = 0; r < 5; r++) {
-        for (var c = 0; c < 5; c++) {
-            if (slot[r] && typeof slot[r][c] !== "undefined" && c < col) {
-                out += slot[r][c];
+function formatPartialBoard() {
+    var lines = [];
+    for (var r = 0; r < rows; r++) {
+        var row = [];
+        for (var c = 0; c < cols; c++) {
+            row.push(c <= revealCol ? "#v" + board[r][c].id + "#" : "[?]");
+        }
+        lines.push(row.join(" "));
+    }
+    return lines.join("\r\n");
+}
+
+function formatBoard(bd) {
+    var lines = [];
+    for (var r = 0; r < rows; r++) {
+        var row = [];
+        for (var c = 0; c < cols; c++) {
+            row.push("#v" + bd[r][c].id + "#");
+        }
+        lines.push(row.join(" "));
+    }
+    return lines.join("\r\n");
+}
+
+function evaluateBoard(bd) {
+    var total = 0, lines = [];
+    var paidCells = {};
+
+    function cellKey(r, c) { return r + "," + c; }
+
+    function symbolStr(cell) {
+        if (cell.mult > 0 && multiplierValueToId[cell.mult]) {
+            return "#v" + multiplierValueToId[cell.mult] + "#";
+        }
+        return "#v" + cell.id + "#";
+    }
+
+    function isNewHit(cellList) {
+        for (var i = 0; i < cellList.length; i++) {
+            if (paidCells[cellList[i]]) return false;
+        }
+        return true;
+    }
+    function markHit(cellList) {
+        for (var i = 0; i < cellList.length; i++) {
+            paidCells[cellList[i]] = true;
+        }
+    }
+
+    // STACKING MULTIPLIERS VERSION
+   function processLine(cells) {
+    for (var start = 0; start < cells.length; start++) {
+        // Only start at a base symbol
+        if (!cells[start] || cells[start].mult !== 0) continue;
+        var anchor = cells[start];
+
+        // Look forward: see how many consecutive same-symbols, allowing multipliers inline
+        var count = 1;
+        var mult = 1;
+        var multIcons = "";
+        var hitCells = [cellKey(anchor._row, anchor._col)];
+        var iconStr = symbolStr(anchor) + " ";
+        var j = start + 1;
+        while (j < cells.length) {
+            var cell = cells[j];
+            if (!cell) break;
+            if (cell.id === anchor.id && cell.mult === 0) {
+                count++;
+                iconStr += symbolStr(cell) + " ";
+                hitCells.push(cellKey(cell._row, cell._col));
+            } else if (cell.mult > 0) {
+                mult *= cell.mult;
+                multIcons += symbolStr(cell) + " ";
+                iconStr += symbolStr(cell) + " ";
+                hitCells.push(cellKey(cell._row, cell._col));
             } else {
-                out += "-";
+                break;
             }
+            j++;
         }
-        out += "\r\n";
-    }
-    return out;
-}
-
-function countBonusWilds() {
-    var cnt = 0;
-    for (var r = 0; r < 5; r++) {
-        if (!slot[r]) continue;
-        for (var c = 0; c < 5; c++) {
-            if (slot[r][c] === bonusSymbol) cnt++;
+        // Trailing multipliers
+        while (j < cells.length && cells[j] && cells[j].mult > 0) {
+            mult *= cells[j].mult;
+            multIcons += symbolStr(cells[j]) + " ";
+            iconStr += symbolStr(cells[j]) + " ";
+            hitCells.push(cellKey(cells[j]._row, cells[j]._col));
+            j++;
         }
-    }
-    return cnt > 6 ? 6 : cnt;
-}
-
-function calculateLineRewards() {
-    var matchedLines = [];
-    var totalMesos = 0;
-    var breakdown = "";
-    var lines = [], i, r, c, d;
-
-    for (i = 0; i < 5; i++) {
-        lines.push({type:"row", idx:i});
-        lines.push({type:"col", idx:i});
-    }
-    lines.push({type:"diag", idx:0});
-    lines.push({type:"adiag", idx:0});
-
-    for (i = 0; i < lines.length; i++) {
-        var ld = lines[i];
-        var syms = [];
-        if (ld.type == "row") for (c = 0; c < 5; c++) syms.push(slot[ld.idx][c]);
-        else if (ld.type == "col") for (r = 0; r < 5; r++) syms.push(slot[r][ld.idx]);
-        else if (ld.type == "diag") for (d = 0; d < 5; d++) syms.push(slot[d][d]);
-        else for (d = 0; d < 5; d++) syms.push(slot[d][4-d]);
-
-        var base = null, broken = false;
-        for (var s = 0; s < syms.length; s++) {
-            if (arrayIndexOf(icons_normal, syms[s]) != -1) {
-                if (!base) base = syms[s];
-                else if (syms[s] != base) { broken = true; break; }
-            }
-        }
-        if (!broken && base) {
-            var mult = getWildLineMultiplier(syms);
-            var reward = 50000 * mult;
-            matchedLines.push({line:ld, reward:reward});
-            breakdown += "Matched " + describeLine(ld)
-                + " [" + getWildLineText(syms) + "] x" + mult
-                + ": #b" + formatNumber(reward) + "#k\r\n";
-            totalMesos += reward;
+        // Only pay for run if it's 3+ and hasn't been paid already (use *first* cell of hit as anchor)
+        if (count >= 3 && isNewHit(hitCells)) {
+            markHit(hitCells);
+            var payout = anchor.payout * count * mult;
+            total += payout;
+            var msg = iconStr.trim() + (mult > 1 ? " x " + multIcons.trim() : "")
+                    + "    " + formatNumber(anchor.payout) + " x " + count
+                    + (mult > 1 ? " x " + mult : "")
+                    + " = " + formatNumber(payout);
+            lines.push({ msg: msg, amount: payout });
+            // Do NOT "start = j" here; allow overlapping (for diagonal/vertical etc) with new anchors
         }
     }
+}
 
-    if (matchedLines.length >= 2 && matchedLines.length <= 4) {
-        var extraArr = [0,0,50000,100000,200000];
-        var extra = extraArr[matchedLines.length] || 0;
-        if (extra) {
-            totalMesos += extra;
-            breakdown += "#eMulti‐Line Bonus: #b" + formatNumber(extra) + "#k#n\r\n";
+
+    // Process rows, columns, diagonals
+    for (var r = 0; r < rows; r++) processLine(bd[r]);
+    for (var c = 0; c < cols; c++) {
+        var col = [];
+        for (var r = 0; r < rows; r++) col.push(bd[r][c]);
+        processLine(col);
+    }
+    var diag1 = [];
+    for (var i = 0; i < rows; i++) diag1.push(bd[i][i]);
+    processLine(diag1);
+    var diag2 = [];
+    for (var i = 0; i < rows; i++) diag2.push(bd[i][cols - 1 - i]);
+    processLine(diag2);
+
+    return { total: total, lines: lines };
+}
+
+function formatNumber(num) {
+    var str = "" + num;
+    var result = "";
+    var count = 0;
+    for (var i = str.length - 1; i >= 0; i--) {
+        result = str.charAt(i) + result;
+        count++;
+        if (count == 3 && i != 0) {
+            result = "," + result;
+            count = 0;
         }
     }
-    return { lines: matchedLines, totalMesos: totalMesos, breakdown: breakdown };
-}
-
-function getWildLineMultiplier(syms) {
-    var m = 1;
-    for (var i = 0; i < syms.length; i++) {
-        m *= (MULTIPLIERS[syms[i]] || 1);
-    }
-    return m;
-}
-function getWildLineText(syms) { return syms.join(""); }
-function describeLine(l) {
-    if (l.type == "row")   return "Row " + (l.idx+1);
-    if (l.type == "col")   return "Col " + (l.idx+1);
-    if (l.type == "diag")  return "Main Diagonal";
-    if (l.type == "adiag") return "Anti‐Diagonal";
-    return "";
-}
-function formatNumber(n) {
-    var s = "" + n, out = "", cnt = 0;
-    for (var i = s.length - 1; i >= 0; i--) {
-        out = s.charAt(i) + out;
-        if (++cnt % 3 == 0 && i != 0) out = "," + out;
-    }
-    return out;
-}
-function arrayIndexOf(arr, val) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] == val) return i;
-    }
-    return -1;
+    return result;
 }

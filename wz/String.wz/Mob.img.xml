@@ -412,7 +412,7 @@
         <string name="name" value="Freezer" />
     </imgdir>
     <imgdir name="4230125">
-        <string name="name" value="Skeledog" />
+        <string name="name" value="Re-animated Doggo" />
     </imgdir>
     <imgdir name="4230126">
         <string name="name" value="Mummydog" />
@@ -2671,7 +2671,7 @@
         </imgdir>
     </imgdir>
     <imgdir name="9400203">
-        <string name="name" value="Silver Slime" />
+        <string name="name" value="Spiritual Ooze" />
     </imgdir>
     <imgdir name="9400204">
         <string name="name" value="Red Slime" />

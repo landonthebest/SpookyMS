@@ -69,6 +69,7 @@ import server.partyquest.AriantColiseum;
 import server.partyquest.MonsterCarnival;
 import server.partyquest.Pyramid;
 import server.partyquest.Pyramid.PyramidMode;
+import server.slayer.SlayerTaskData;
 import tools.DatabaseConnection;
 import tools.PacketCreator;
 import tools.Pair;
@@ -1507,6 +1508,59 @@ public class NPCConversationManager extends AbstractPlayerInteraction {
 
     public int getSlayerTaskProgress() { return getPlayer().getSlayerTaskProgress(); }
     public void setSlayerTaskProgress(int progress) { getPlayer().setSlayerTaskProgress(progress); }
+
+    public void addSlayerExp(int exp) { getPlayer().addSlayerExp(exp); }
+
+    public int calculateSlayerPoints(int goal, int level) {
+        return server.slayer.SlayerTaskData.calculatePoints(goal, level);
+    }
+
+    public List<Map<String, Object>> getAllSlayerTasks() {
+        List<Map<String, Object>> tasks = new ArrayList<>();
+        for (server.slayer.SlayerTaskData.Task t : server.slayer.SlayerTaskData.TASKS) {
+            Map<String, Object> map = new HashMap<>();
+            map.put("id", t.monsterId);
+            map.put("name", t.name);
+            map.put("level", t.requiredLevel);
+            map.put("exp", t.expReward);
+            map.put("goalMin", t.goalMin);
+            map.put("goalMax", t.goalMax);
+
+            // Optionally: Preview max possible points for the task
+            map.put("ptsPreview", SlayerTaskData.calculatePoints(t.goalMax, t.requiredLevel));
+
+            // REMOVE this line!
+            // map.put("pts", t.points);
+
+            tasks.add(map);
+        }
+        return tasks;
+    }
+
+    public Map<String, Object> getCurrentSlayerTask() {
+        int id = getPlayer().getSlayerTaskMonsterId();
+        for (server.slayer.SlayerTaskData.Task t : server.slayer.SlayerTaskData.TASKS) {
+            if (t.monsterId == id) {
+                Map<String, Object> map = new HashMap<>();
+                map.put("id", t.monsterId);
+                map.put("name", t.name);
+                map.put("level", t.requiredLevel);
+                map.put("goalMin", t.goalMin);
+                map.put("goalMax", t.goalMax);
+
+                // Optionally: Show the points for player's *current* assigned goal
+                int playerGoal = getPlayer().getSlayerTaskGoal();
+                map.put("ptsNow", SlayerTaskData.calculatePoints(playerGoal, t.requiredLevel));
+
+                // REMOVE this line!
+                // map.put("pts", t.points);
+
+                return map;
+            }
+        }
+        return null;
+    }
+
 
 
 }

@@ -96,11 +96,11 @@
     </imgdir>
     <imgdir name="hit1">
         <canvas name="0" width="150" height="135">
-            <vector name="origin" x="21" y="33" />
-            <vector name="lt" x="-21" y="-33" />
-            <vector name="rb" x="22" y="0" />
-            <vector name="head" x="-10" y="-27" />
-            <int name="delay" value="600" />
+            <int name="delay" value="180" />
+            <vector name="head" x="-31" y="-79" />
+            <vector name="lt" x="-68" y="-119" />
+            <vector name="origin" x="82" y="132" />
+            <vector name="rb" x="60" y="0" />
         </canvas>
     </imgdir>
     <imgdir name="die1">

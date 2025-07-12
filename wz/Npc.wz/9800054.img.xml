@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<imgdir name="9800054.img">
+    <imgdir name="info">
+        <imgdir name="script">
+            <imgdir name="0">
+                <string name="script" value="hilow" />
+            </imgdir>
+        </imgdir>
+        <int name="dcLeft" value="-39" />
+        <int name="dcTop" value="-81" />
+        <int name="dcRight" value="33" />
+        <int name="dcBottom" value="-1" />
+    </imgdir>
+    <imgdir name="stand">
+        <canvas name="0" width="125" height="125">
+            <vector name="origin" x="58" y="119" />
+            <int name="z" value="0" />
+            <int name="delay" value="2500" />
+        </canvas>
+    </imgdir>
+</imgdir>

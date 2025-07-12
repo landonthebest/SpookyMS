@@ -1,14 +1,16 @@
 /*
- * Simple Vegas Baccarat - AdventureMS
- * 8-Deck, No Commission, Three main bets only.
+ * Baccarat NPC for MapleStory - separate final results window
  */
+
 var status = -1;
+var inSummary = false;
 var betAmount = 0;
-var betChoice = ""; // "Player", "Banker", "Tie"
-var shoe = [];
+var betType = -1;
+var deck = [];
 var playerHand = [], bankerHand = [];
-var playerThirdCard = null, bankerThirdCard = null;
-var debug = false;
+var playerTotal = 0, bankerTotal = 0;
+
+var mathMsg = ""; // Store card math text to display on results window
 
 var cards = [
     {id: 4310002, name: "2", value: 2},
@@ -28,18 +30,20 @@ var cards = [
 
 function resetAll() {
     status = -1;
+    inSummary = false;
     betAmount = 0;
-    betChoice = "";
-    shoe = [];
+    betType = -1;
+    deck = [];
     playerHand = [];
     bankerHand = [];
-    playerThirdCard = null;
-    bankerThirdCard = null;
+    playerTotal = 0;
+    bankerTotal = 0;
+    mathMsg = "";
 }
 
-function shuffleShoe() {
+function shuffleDeck() {
     var d = [];
-    for (var i = 0; i < 8; i++)
+    for (var i = 0; i < 4; i++)
         for (var j = 0; j < cards.length; j++)
             d.push(cards[j]);
     for (var i = d.length - 1; i > 0; i--) {
@@ -49,36 +53,57 @@ function shuffleShoe() {
     return d;
 }
 
-function handTotal(hand) {
+function displayHand(hand) {
+    var str = "";
+    for (var i = 0; i < hand.length; i++)
+        str += "#i" + hand[i].id + "# ";
+    return str;
+}
+
+function baccaratTotal(hand) {
     var total = 0;
     for (var i = 0; i < hand.length; i++)
         total += hand[i].value;
     return total % 10;
 }
 
-function displayHand(hand) {
-    var str = "";
-    for (var i = 0; i < hand.length; i++)
-        str += "#i" + hand[i].id + "#";
-    return str;
+function displayMath(hand) {
+    var values = hand.map(function(card){ return card.value; });
+    var total = values.reduce(function(sum, v){ return sum + v; }, 0);
+    return values.join("    +    ") + "    =    " + (total % 10);
 }
 
-function start() { resetAll(); action(1, 0, 0); }
+
+function start() {
+    resetAll();
+    status = 0;
+    action(1, 0, 0);
+}
 
 function action(mode, type, selection) {
-    if (mode != 1) { resetAll(); cm.dispose(); return; }
-    status++;
+    if (mode != 1) {
+        resetAll();
+        cm.dispose();
+        return;
+    }
+    if (inSummary) {
+        resetAll();
+        cm.dispose();
+        return;
+    }
 
     if (status == 0) {
         var maxBet = Math.floor(cm.getMeso() / 2);
         if (maxBet < 1000) {
-            cm.sendOk("You need at least 2000 mesos to play (minimum bet is 1000, max bet is half your mesos).");
-            resetAll(); cm.dispose(); return;
+            cm.sendOk("You need at least 2000 mesos to play (minimum bet is 1000, max is half your mesos).");
+            cm.dispose();
+            return;
         }
         cm.sendGetNumber(
             "Welcome to #eBaccarat#n!\r\nHow many mesos would you like to bet?\r\n#r(Min: 1000, Max: " + maxBet + ")#k",
             1000, 1000, maxBet
         );
+        status++;
     }
     else if (status == 1) {
         betAmount = selection;
@@ -88,108 +113,131 @@ function action(mode, type, selection) {
             resetAll(); cm.dispose(); return;
         }
         cm.sendSimple(
-            "Place your main bet:\r\n#L0##rPlayer (1:1)#k#l\r\n#L1##bBanker (No Comm)#k#l\r\n#L2##dTie (9:1)#k#l"
+            "Place your bet:\r\n#L0##bPlayer#k\r\n#L1##rBanker#k\r\n#L2##dTie#k"
         );
+        status++;
     }
     else if (status == 2) {
-        if (selection == 0) betChoice = "Player";
-        else if (selection == 1) betChoice = "Banker";
-        else if (selection == 2) betChoice = "Tie";
-
-        cm.sendYesNo("You bet #b" + betAmount + "#k mesos on #e" + betChoice + "#n.\r\nReady to deal?");
+        betType = selection;
+        cm.gainMeso(-betAmount);
+        deck = shuffleDeck();
+        playerHand = [deck.pop()];
+        bankerHand = [deck.pop()];
+        cm.sendSimple(
+            "Dealing...\r\n\r\nPlayer: " + displayHand(playerHand) + "\r\nBanker: " + displayHand(bankerHand) +
+            "\r\n\r\n#L0#Deal second card#l"
+        );
+        status++;
     }
     else if (status == 3) {
-        cm.gainMeso(-betAmount);
-        shoe = shuffleShoe();
+        playerHand.push(deck.pop());
+        bankerHand.push(deck.pop());
+        cm.sendSimple(
+            "Dealing...\r\n\r\nPlayer: " + displayHand(playerHand) + "\r\nBanker: " + displayHand(bankerHand) +
+            "\r\n\r\n#L0#Show Cards & Math#l"
+        );
+        status++;
+    }
+    else if (status == 4) {
+        // Prepare the card math/results window, but do NOT show payout yet
+        playerTotal = baccaratTotal(playerHand);
+        bankerTotal = baccaratTotal(bankerHand);
 
-        playerHand = [shoe.pop(), shoe.pop()];
-        bankerHand = [shoe.pop(), shoe.pop()];
-        playerThirdCard = null;
-        bankerThirdCard = null;
+        mathMsg = "Player: " + displayHand(playerHand) + "\r\n";
+        mathMsg += "#bMath: " + displayMath(playerHand) + "#k\r\n";
+        mathMsg += "Banker: " + displayHand(bankerHand) + "\r\n";
+        mathMsg += "#rMath: " + displayMath(bankerHand) + "#k\r\n";
+        mathMsg += "\r\n";
 
         // Natural check
-        var playerScore = handTotal(playerHand);
-        var bankerScore = handTotal(bankerHand);
-        var naturalFinish = (playerScore >= 8 || bankerScore >= 8);
-
-        // Third card rules
-        if (!naturalFinish) {
-            // Player third card
-            if (playerScore <= 5) {
-                playerThirdCard = shoe.pop();
-                playerHand.push(playerThirdCard);
-            }
-            // Banker third card
-            bankerScore = handTotal(bankerHand); // recalc in case player didn't draw
-            var p3 = (playerThirdCard ? playerThirdCard.value : -1);
-
-            var bankerDraw = false;
-            if (playerThirdCard == null) {
-                if (bankerScore <= 5) bankerDraw = true;
-            } else {
-                if (bankerScore <= 2) bankerDraw = true;
-                else if (bankerScore == 3 && p3 != 8) bankerDraw = true;
-                else if (bankerScore == 4 && [2,3,4,5,6,7].indexOf(p3) != -1) bankerDraw = true;
-                else if (bankerScore == 5 && [4,5,6,7].indexOf(p3) != -1) bankerDraw = true;
-                else if (bankerScore == 6 && (p3 == 6 || p3 == 7)) bankerDraw = true;
-            }
-            if (bankerDraw) {
-                bankerThirdCard = shoe.pop();
-                bankerHand.push(bankerThirdCard);
-            }
+        if (playerTotal >= 8 || bankerTotal >= 8) {
+            mathMsg += "#eNatural! No more cards drawn.#n\r\n";
+            cm.sendSimple(mathMsg + "\r\n#L0#Show Results#l");
+            status = 5; // Jump to results window next
+            return;
         }
 
-        // Always show both full hands, all cards
-        var finalPlayerScore = handTotal(playerHand);
-        var finalBankerScore = handTotal(bankerHand);
+        // Player draw rule
+        var playerDraws = (playerTotal <= 5);
+        var playerDrawnCard = null;
+        if (playerDraws) {
+            playerDrawnCard = deck.pop();
+            playerHand.push(playerDrawnCard);
+            playerTotal = baccaratTotal(playerHand);
+            mathMsg += "#bPlayer draws a third card:#k " + "#i" + playerDrawnCard.id + "# (" + playerDrawnCard.value + ")\r\n";
+            mathMsg += "#bMath: " + displayMath(playerHand) + "#k\r\n";
+        } else {
+            mathMsg += "#bPlayer stands.#k\r\n";
+        }
 
-        var msg = "#eBaccarat Results#n\r\n\r\n";
-        msg += "Your bet: #b" + betAmount + "#k mesos on #e" + betChoice + "#n\r\n\r\n";
-        msg += "#bPlayer#k: " + displayHand(playerHand) + " (" + finalPlayerScore + ")\r\n";
-        msg += "#rBanker#k: " + displayHand(bankerHand) + " (" + finalBankerScore + ")\r\n\r\n";
+        // Banker draw rule
+        var bankerDraws = false;
+        var bankerDrawnCard = null;
+        var b0 = bankerTotal, p3 = playerDrawnCard ? playerDrawnCard.value : -1;
+        if (!playerDraws) {
+            if (b0 <= 5) bankerDraws = true;
+        } else {
+            if (b0 <= 2) bankerDraws = true;
+            else if (b0 == 3 && p3 != 8) bankerDraws = true;
+            else if (b0 == 4 && [2,3,4,5,6,7].indexOf(p3) != -1) bankerDraws = true;
+            else if (b0 == 5 && [4,5,6,7].indexOf(p3) != -1) bankerDraws = true;
+            else if (b0 == 6 && [6,7].indexOf(p3) != -1) bankerDraws = true;
+        }
+        if (bankerDraws) {
+            bankerDrawnCard = deck.pop();
+            bankerHand.push(bankerDrawnCard);
+            bankerTotal = baccaratTotal(bankerHand);
+            mathMsg += "#rBanker draws a third card:#k " + "#i" + bankerDrawnCard.id + "# (" + bankerDrawnCard.value + ")\r\n";
+            mathMsg += "#rMath: " + displayMath(bankerHand) + "#k\r\n";
+        } else {
+            mathMsg += "#rBanker stands.#k\r\n";
+        }
 
-        var winner = "";
-        if (finalPlayerScore > finalBankerScore) winner = "Player";
-        else if (finalBankerScore > finalPlayerScore) winner = "Banker";
-        else winner = "Tie";
-        msg += "#eWinner:#n #b" + winner + "#k\r\n";
+        // After all card math is displayed, player must click to see final summary
+        cm.sendSimple(mathMsg + "\r\n#L0#Show Results#l");
+        status++; // status = 5
+    }
+    else if (status == 5) {
+        // Final window: winner and payout
+        var msg = "----- #eBaccarat Summary#n -----\r\n";
+        msg += mathMsg + "\r\n";
+        playerTotal = baccaratTotal(playerHand);
+        bankerTotal = baccaratTotal(bankerHand);
 
-        // Payout calculation
-        var winnings = 0;
-        if (betChoice == winner) {
-            if (winner == "Player") {
-                winnings = betAmount * 2;
-                msg += "#gYou win! Player pays 1:1#k";
-            } else if (winner == "Banker") {
-                if (finalBankerScore == 6) {
-                    winnings = Math.floor(betAmount * 1.5); // Pays half (No Comm, Banker 6)
-                    msg += "#gBanker wins with 6! Pays 50%.#k";
-                } else {
-                    winnings = betAmount * 2;
-                    msg += "#gYou win! Banker pays 1:1#k";
-                }
-            } else if (winner == "Tie") {
-                winnings = betAmount * 9;
-                msg += "#gYou win! Tie pays 9:1#k";
+        msg += "#bFinal Totals:#k Player: " + playerTotal + ", Banker: " + bankerTotal + "\r\n";
+        var winMsg = "";
+        var payout = 0;
+
+        if (playerTotal == bankerTotal) {
+            winMsg = "#dIt's a TIE!#k\r\n";
+            if (betType == 2) {
+                payout = betAmount * 8;
+                winMsg += "#gYou win 8x your bet! (" + payout + " mesos)#k";
+                cm.gainMeso(payout);
+            } else {
+                winMsg += "Your bet is returned.";
+                cm.gainMeso(betAmount);
+            }
+        } else if (playerTotal > bankerTotal) {
+            if (betType == 0) {
+                payout = betAmount * 2;
+                winMsg = "#gPLAYER wins! You win " + payout + " mesos.#k";
+                cm.gainMeso(payout);
+            } else {
+                winMsg = "#rPLAYER wins. You lost your bet.#k";
             }
         } else {
-            if (winner == "Tie" && (betChoice == "Player" || betChoice == "Banker")) {
-                winnings = betAmount; // push
-                msg += "#bIt's a tie! Your bet is returned.#k";
+            if (betType == 1) {
+                payout = Math.floor(betAmount * 1.95); // Banker takes 5% commission
+                winMsg = "#gBANKER wins! You win " + payout + " mesos.#k";
+                cm.gainMeso(payout);
             } else {
-                msg += "#rYou lost your bet.#k";
+                winMsg = "#rBANKER wins. You lost your bet.#k";
             }
         }
-
-        if (winnings > 0)
-            cm.gainMeso(winnings);
-
+        msg += "\r\n" + winMsg;
         msg += "\r\n\r\n#L0#Exit#l";
+        inSummary = true;
         cm.sendSimple(msg);
-        status = 99;
-    }
-    else if (status == 99) {
-        resetAll();
-        cm.dispose();
     }
 }

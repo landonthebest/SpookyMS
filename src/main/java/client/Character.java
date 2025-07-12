@@ -12256,59 +12256,86 @@ public class Character extends AbstractCharacterObject {
         return null;
     }
 
-    // Call this method whenever a monster is killed
+    public void addSlayerExp(int exp) {
+        int oldLevel = slayerLevel;
+        slayerExp += exp;
+        if (slayerLevel < 1) slayerLevel = 1;
+        int levelUps = 0, maxLevelUps = 1000;
+        while (slayerExp >= getSlayerExpNeededForLevel(slayerLevel)) {
+            int expNeeded = getSlayerExpNeededForLevel(slayerLevel);
+            if (expNeeded <= 0) break;
+            slayerExp -= expNeeded;
+            slayerLevel++;
+            levelUps++;
+            if (levelUps > maxLevelUps) break;
+        }
+        if (slayerLevel > oldLevel) {
+            String hint = "#e#rLevel UP!#n\r\n#bLv." + oldLevel + " #k#r->#k #bLv." + slayerLevel + "#k";
+            client.sendPacket(PacketCreator.sendHint(hint, 130, 3));
+        }
+    }
+
     public void handleSlayerKill(int mobId) {
-        if (slayerTaskMonsterId == 0) return; // No task assigned
-        if (mobId != slayerTaskMonsterId) return; // Not the assigned mob
+        if (slayerTaskMonsterId == 0) return;
+        if (mobId != slayerTaskMonsterId) return;
+        if (client == null) return;
 
         SlayerTaskData.Task task = SlayerTaskData.getTaskForMob(mobId);
         if (task == null) return;
 
-        // Only allow progress/exp if not complete
         if (slayerTaskProgress < slayerTaskGoal) {
             slayerTaskProgress++;
 
-            // Award Slayer EXP per kill (configurable)
+            // Award Slayer EXP per kill
             int slayerExpPerKill = task.requiredLevel * 2;
             slayerExp += slayerExpPerKill;
 
-           /* client.sendPacket(PacketCreator.serverNotice(6,
-                    "You gained " + slayerExpPerKill + " Slayer EXP! "
-                            + "(Slayer Task: " + slayerTaskProgress + "/" + slayerTaskGoal + ")"
-            ));*/
+            int expNeeded = getSlayerExpNeededForLevel(slayerLevel);
+            String xpHint = "#b" + slayerExp + "#k/#b" + expNeeded + "#k | #g+ " + slayerExpPerKill + "#k XP";
+            client.sendPacket(PacketCreator.sendHint(xpHint, 130, 1));
 
-            String showMsg_ = "#r+#e#g" + slayerExpPerKill + "#n#k XP";
+            // Level up check
+            int oldLevel = slayerLevel;
+            if (slayerLevel < 1) slayerLevel = 1;
+            int levelUps = 0, maxLevelUps = 1000;
+            while (slayerExp >= getSlayerExpNeededForLevel(slayerLevel)) {
 
-
-            client.getPlayer().showHint(showMsg_, 25);
-
-
-
-            // Notify every 20 kills (not at 0 or completion)
-            if (slayerTaskProgress % 20 == 0 && slayerTaskProgress < slayerTaskGoal) {
-                client.sendPacket(PacketCreator.serverNotice(6,
-                        "Slayer Task Progress: " + slayerTaskProgress + "/" + slayerTaskGoal
-                ));
+                if (expNeeded <= 0) break;
+                slayerExp -= expNeeded;
+                slayerLevel++;
+                levelUps++;
+                if (levelUps > maxLevelUps) break;
+            }
+            if (slayerLevel > oldLevel) {
+                String hint = "#e#rLevel UP!#n\r\n#bLv." + oldLevel + " #k#r->#k #bLv." + slayerLevel + "#k";
+                client.sendPacket(PacketCreator.sendHint(hint, 130, 3));
             }
 
-            // Notify when just finished
+            if (slayerTaskProgress > 0 && slayerTaskProgress < slayerTaskGoal) {
+                int percent = (int) Math.floor(((double) slayerTaskProgress / slayerTaskGoal) * 100);
+                // Only notify at every 20% progress (20%, 40%, 60%, 80%)
+                if (slayerTaskGoal >= 5 && percent % 20 == 0 && slayerTaskProgress != 0) {
+                    String mobName = getSlayerTaskName(); // Or use your own way to get the mob/task name
+                    client.sendPacket(PacketCreator.serverNotice(6,
+                            "[Slayer] " + mobName + ": " + slayerTaskProgress + "/" + slayerTaskGoal));
+                }
+            }
+
+            // Notify when just finished (completion, plain)
             if (slayerTaskProgress == slayerTaskGoal) {
                 client.sendPacket(PacketCreator.serverNotice(6,
-                        "Slayer Task Complete! Turn it in to the Slayer Master."
-                ));
+                        "[Slayer] Task Complete! Turn it in to the Slayer Master."));
             }
         } else {
-            // Already done, just keep yelling at the player, no exp/progress
-            /*client.sendPacket(PacketCreator.serverNotice(6,
-                    "HEY GO TURN IN YOUR TASK!"
-            ));*/
-            String showMsg_2 = "#e#rHEY GO TURN IN YOUR TASK!";
-            client.getPlayer().showHint(showMsg_2, 75);
+            String xpHint1 = "#rTurn In Task";
+            client.sendPacket(PacketCreator.sendHint(xpHint1, 80, 1));
         }
-        // DO NOT grant player EXP here!
     }
 
-
+    private int getSlayerExpNeededForLevel(int slayerLevel) {
+        if (slayerLevel < 1) slayerLevel = 1;
+        return 100 * slayerLevel;
+    }
 
 
 }

@@ -2887,8 +2887,8 @@
             <string name="mapDesc" value="Access to each zone." />
         </imgdir>
         <imgdir name="910000001">
-            <string name="mapName" value="Park" />
-            <string name="streetName" value="Kora" />
+            <string name="mapName" value="North America" />
+            <string name="streetName" value="Burial Forest" />
         </imgdir>
         <imgdir name="200000301">
             <string name="mapName" value="Guild Headquarters" />
